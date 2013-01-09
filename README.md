@@ -3,12 +3,11 @@ McCoyDeveloper
 
 Full Sail Final Project, ShortCuts
 --------
-January 2013
+### January 2013
 
 
-### NOTE::	- Developer note or question to another developer.
-
-
+	NOTE::	- Developer note or question to another developer.
+--
 	QUESTION:K: Developer K has a question
 	CHECK:: Double check
 --
