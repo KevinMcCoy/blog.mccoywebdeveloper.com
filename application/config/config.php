@@ -14,7 +14,18 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url'] = 'http://127.0.0.1/McCoyDeveloper/';
+
+switch (ENVIRONMENT) {
+	case 'local': $config['base_url'] = 'http://127.0.0.1/McCoyDeveloper/'; break;
+
+	case 'serverTesting': $config['base_url'] = ''; break;
+
+	case 'devlive':	$config['base_url'] = ''; break;
+
+	case 'live': $config['base_url'] = ''; break;
+};
+
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +37,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +235,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'kevin';
 
 /*
 |--------------------------------------------------------------------------
