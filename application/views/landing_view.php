@@ -1,14 +1,13 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
 <div id="center">
-	<h1>3-Event Water Skiing</h1>
 	<h4>Slalom,Trick, and Jump Skiing</h4>
 </div>
 
 <ul id="siteInfo">
 	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 	<li class="slalom">
-		<a href="#detail_invoice">
+		<a href="<?= base_url('index.php/Views/about') ?>">
 			<!-- <div id="invoice">Image Slice 1</div> -->
 			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 			<h3>Slalom Ski</h3>

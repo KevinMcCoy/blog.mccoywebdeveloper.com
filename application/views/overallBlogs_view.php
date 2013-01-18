@@ -1,16 +1,16 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
 <div id="center">
-	<h2>Slalom</h2>
+	<h2>Overall</h2>
 </div>
 
 <ul id="siteInfo">
 	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
-	<li class="slalom">
+	<li class="overall">
 		<!-- <div id="invoice">Image Slice 1</div> -->
-		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-		<h3>Slalom Ski</h3>
-		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+		<img src="<?= base_url('inc/img/overall_landing.png') ?>" alt="Overall Skiier just before dusk" />
+		<h3>Overall Ski</h3>
+		<p>The meaning of the term Overall is a scoring system.  The way this scoring works is it adds slalom, trick, and jump scores together.  The combined score will show who wins in the Three Event.  Overall scores are figured out at every official tournament that qualifies a contender for all three events.</p>
 	</li>
 </ul><!--[END]#siteInfo-->
 

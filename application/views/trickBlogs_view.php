@@ -1,16 +1,16 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
 <div id="center">
-	<h2>Slalom</h2>
+	<h2>Trick</h2>
 </div>
 
 <ul id="siteInfo">
 	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
-	<li class="slalom">
+	<li class="trick">
 		<!-- <div id="invoice">Image Slice 1</div> -->
-		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-		<h3>Slalom Ski</h3>
-		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+		<img src="<?= base_url('inc/img/trick_landing.jpg') ?>" alt="Trick Skiier just before dusk" />
+		<h3>Trick Ski</h3>
+		<p>Trick skiing is on one much smaller ski and the footplates are set differently than a slalom ski.  The skier has a time limit to perform tricks that are worth points.  The boat speed varies on the rider’s preference; usually any were from 12 to 24 MPHs.</p>
 	</li>
 </ul><!--[END]#siteInfo-->
 

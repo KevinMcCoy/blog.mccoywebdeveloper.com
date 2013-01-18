@@ -18,7 +18,7 @@ class Main extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index(){
-		//TODO:: Add baseurl to this
+		//TODO:: Add baseurl to this or use /* Location: ./application/config/routes.php */
 		header('Location: http://127.0.0.1/McCoyDeveloper/index.php/Views/landing');
 	}
 }

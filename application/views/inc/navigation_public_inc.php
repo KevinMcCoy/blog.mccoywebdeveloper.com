@@ -10,11 +10,12 @@
 					else echo $currentPage . '_page'; ?>" class="wrapper clearfix">
 
 		<div id="header-public">
-			<!-- LOGO -->
+			<!-- ### LOGO -->
 			<a href="<?= base_url('index.php/') ?>"><h2 class="logo">McCoy Developer</h2></a>
+
 			
-			<!-- Login -->
-			<!-- NOTES::  Ed says not to have login for current scope of the project -->
+			<!-- ### Login -->
+			<!-- TEMPORY:: NOTES::  Ed says not to have login for current scope of the project -->
 			<!-- <div class="login">
 				<form id="login" action="Members/login" method="POST">
 					<input type="text" name="email" placeholder="email" class="zip login">
@@ -23,4 +24,13 @@
 					<input id="loginBTN" class="login login_btn" type="submit" value="Log in">
 				</form>
 			</div> -->
+
+			<h1><a href="<?= base_url('index.php/Views/about') ?>">3-Event Water Skiing</a></h1>
+
+
+			<!-- ### Navigation Bar to the four Main Blog pages -->
+			<a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a>
+			<a href="<?= base_url('index.php/Views/trickMain') ?>">Trick</a>
+			<a href="<?= base_url('index.php/Views/jumpMain') ?>">Jump</a>
+			<a href="<?= base_url('index.php/Views/overallMain') ?>">Overall</a>
 		</div><!-- [END] #header-public -->
