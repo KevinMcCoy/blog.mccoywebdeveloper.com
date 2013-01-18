@@ -17,15 +17,9 @@ class Main extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$data['currentPage'] = 'landing';
-		$this->load->view('inc/open_html_inc', $data);
-		$this->load->view('inc/navigation_public_inc', $data);
-		$this->load->view('landing_view');
-		$this->load->view('inc/footer_inc');
-		$this->load->view('inc/feedback_inc');
-		$this->load->view('inc/close_html_inc', $data);
+	public function index(){
+		//TODO:: Add baseurl to this
+		header('Location: http://127.0.0.1/McCoyDeveloper/index.php/Views/landing');
 	}
 }
 
