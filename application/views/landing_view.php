@@ -7,32 +7,36 @@
 
 <ul id="siteInfo">
 	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
-	<li class="invoice">
+	<li class="slalom">
 		<a href="#detail_invoice">
-			<div id="invoice"><!--Image Slice 1--></div>
+			<!-- <div id="invoice">Image Slice 1</div> -->
+			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 			<h3>Slalom Ski</h3>
-			<p>Water skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake.  The skier then can start going around six buoys in a ski course.</p>
+			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		</a>
 	</li>
-	<li class="contacts">
+	<li class="trick">
 		<a href="#detail_contacts">
-			<div id="contacts"><!--Image Slice 2--></div>
+			<!-- <div id="contacts"> Image Slice 2 </div> -->
+			<img src="<?= base_url('inc/img/trick_landing.jpg') ?>" alt="Trick Skiier doing a flip" />
 			<h3>Trick Ski</h3>
-			<p>Trick skiing is a much smaller one ski and the footplates are set differently than a slalom ski.   The trick skier has a time limit to perform tricks worth points.</p>
+			<p>Trick skiing is on one much smaller ski and the footplates are set differently than a slalom ski.  The skier has a time limit to perform tricks that are worth points.  The boat speed varies on the rider’s preference; usually any were from 12 to 24 MPHs.</p>
 		</a>
 	</li>
-	<li class="products">
+	<li class="jump">
 		<a href="#detail_products">
 			<div id="materials"><!--Image Slice 3--></div>
+			<img src="<?= base_url('inc/img/jump_landing.png') ?>" alt="Trick Skiier doing a flip" />
 			<h3>Jump Ski</h3>
-			<p>Jump skiing is were the skier skis on two much larger, longer, and wider than a slalom ski.  The skier swings from one side to the other crossing the boats wakes then hitting a 5-6 feet fiberglass ramp. (Known to travel over the ramp at 70 mph flying up to 300 feet)</p>
+			<p>Jump skiing is where the skier skis on two skis. They are larger, longer, and wider than a slalom ski.  The skier swings from one side to the other, crossing the boat’s wake. A pro skier can travel to a speed up to 90MPHs just before hitting a 5-6 feet fiberglass ramp. It can be hard to believe that the boat’s top speed is 45MPHs. The world record holder in jump skiing flew over 300 feet in the air.</p>
 		</a>	
 	</li>
-	<li class="payments">
+	<li class="overall">
 		<a href="#detail_payments">
 			<div id="payments"><!--Image Slice 2--></div>
+			<img src="<?= base_url('inc/img/overall_landing.png') ?>" alt="Trick Skiier doing a flip" />
 			<h3>Overall 3-Event</h3>
-			<p>Overall scoring is each slalom, trick, and jump scores combined to see who win in all three category.  Commonly figured out at official tournaments.</p>
+			<p>The meaning of the term Overall is a scoring system.  The way this scoring works is it adds slalom, trick, and jump scores together.  The combined score will show who wins in the Three Event.  Overall scores are figured out at every official tournament that qualifies a contender for all three events.</p>
 		</a>	
 	</li>
 </ul><!--[END]#siteInfo-->
