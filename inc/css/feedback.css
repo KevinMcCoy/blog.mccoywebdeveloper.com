@@ -1,0 +1,64 @@
+/*
+	Author: Kevin McCoy
+	Created: Jan 19, 2013;
+*/
+
+/*===================================================*/
+/*  User Feedback */
+/*===================================================*/
+
+div#user_testing{
+	padding: 40px;
+	background-color: rgb(225, 236, 240);
+}
+div#user_testing p{
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	padding: 7px 0 12px;
+	font-weight: 600;
+}
+div#user_testing label{
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+form#userfeedback{
+	width: 85%;
+	margin: 27px auto;
+}
+form#userfeedback li{
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+form#userfeedback label{
+	display: block;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	margin: 8px 0 6px;
+}
+form#userfeedback input, textarea{
+	margin-left: -30px;
+}
+form#userfeedback textarea{
+	width: 101%;
+	height: 82px;
+}
+ol#feedback_touchbase{
+	width: 50%;
+}
+input#userfeedbacksubmit[type=submit]{
+	margin: 22px auto 22px 14px;
+	width: 80px;
+	height: 38px;
+	border-radius: 0.7em;
+	display: block;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+}
+p#thankyou{
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align: center;
+}
+/*=====================[END] feedback.css  ============*/

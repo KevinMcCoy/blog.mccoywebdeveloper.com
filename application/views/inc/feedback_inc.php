@@ -49,8 +49,9 @@
 				</ol>
 		</fieldset>
 		
-		<input id="userfeedbacksubmit" type="submit">
-		
+		<fieldset style="border:hidden;">
+			<input id="userfeedbacksubmit" type="submit">
+		</fieldset>
 	</form>
 
 	<p id="thankyou">Thankyou for your time checking out our site.  Your usability testing and feedback will be greatly appreciated.</p>
