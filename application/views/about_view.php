@@ -2,7 +2,7 @@
 <h1>About</h1>
 
 <!-- Details about Info listed from the four li above -->
-<ul id="siteInfoDetails">
+<ul id="about">
 	<li id="detail_invoice" onclick="#siteInfo">
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 		<h3>Slalom</h3>
