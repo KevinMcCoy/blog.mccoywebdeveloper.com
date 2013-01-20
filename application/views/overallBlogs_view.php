@@ -4,7 +4,7 @@
 	<h2>Overall</h2>
 </div>
 
-<ul id="siteInfo">
+<ul id="overallBlog">
 	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 	<li class="overall">
 		<!-- <div id="invoice">Image Slice 1</div> -->
@@ -14,7 +14,7 @@
 	</li>
 </ul><!--[END]#siteInfo-->
 
-<a class="landingBtn" href="<?= base_url('register') ?>">Click to be part of the Water Ski Community</a>
+<a class="overallBlog" href="<?= base_url('register') ?>">Click to be part of the Water Ski Community</a>
 
 <!-- [End] of file views/landing_view.php -->
 <!-- Location: .../application/views/landing_views.php -->

@@ -4,7 +4,7 @@
 	<h2>Trick</h2>
 </div>
 
-<ul id="siteInfo">
+<ul id="trickBlog">
 	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 	<li class="trick">
 		<!-- <div id="invoice">Image Slice 1</div> -->
@@ -24,7 +24,7 @@
 		<h3>Trick Ski</h3>
 		<p>Trick skiing is on one much smaller ski and the footplates are set differently than a slalom ski.  The skier has a time limit to perform tricks that are worth points.  The boat speed varies on the rider’s preference; usually any were from 12 to 24 MPHs.</p>
 	</li>
-</ul><!--[END]#siteInfo-->
+</ul><!--[END]#trickBlog-->
 
 <a class="landingBtn" href="<?= base_url('register') ?>">Click to be part of the Water Ski Community</a>
 
