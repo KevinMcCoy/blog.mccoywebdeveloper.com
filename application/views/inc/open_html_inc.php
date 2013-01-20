@@ -21,6 +21,10 @@
 		<!-- Venders CSS -->
 		<link rel="stylesheet" href="<?= base_url('inc/css/vendors/normalize.css') ?>">
 		<link rel="stylesheet" href="<?= base_url('inc/css/feedback.css') ?>">
+		<link rel="stylesheet" href="<?= base_url('inc/css/landing.css') ?>">
+		<link rel="stylesheet" href="<?= base_url('inc/css/main.css') ?>">
+
+
 		<script src="<?= base_url('inc/js/vendors/modernizr.custom.js') ?>"></script>
 		
 		<!-- Develpoment Stage CSS -->

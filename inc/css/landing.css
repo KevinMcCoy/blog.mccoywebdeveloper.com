@@ -1,0 +1,60 @@
+/*
+	Author: Kevin McCoy
+	Created: 01/19/2013
+*/
+/*===============================================================*/
+/*  Landing Page CSS*/
+/*===============================================================*/
+div#center{
+	text-align: center;
+	clear: both;
+	margin-top: 46px;
+}
+ul#siteInfo{
+	display: block;
+	width: 85%;
+	margin: 0px auto 60px;
+	list-style-type: none;
+}
+ul#siteInfo li{
+	display: block;
+	float: left;
+	width:202px;
+	margin-left: 0px;
+	margin-right: 45px;
+	padding-top: 30px;
+}
+ul#siteInfo li p{
+	text-shadow: 0 2px 0 rgba(255, 255, 255, .8);
+}
+ul#siteInfo a{
+	text-decoration: none;
+}
+ul#siteInfo li:hover{
+	background-color: #f6f6f6;
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+ul#siteInfo h3{
+ 	text-align: center;
+ 	margin-bottom: 0px;
+ 	font-size: 1.4em;
+}
+.landingBtn{
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width: 280px;
+	padding: 5px;
+	padding-top: 12px;
+	color: black;
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+.landingBtn:hover{
+}
+/*======================= [END] Landing Page ========*/
