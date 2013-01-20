@@ -39,22 +39,38 @@ form#userfeedback label{
 }
 form#userfeedback input, textarea{
 	margin-left: -30px;
+	border: 5px solid white; 
+	-webkit-box-shadow: 
+	  inset 0 0 8px  rgba(0,0,0,0.1),
+			0 0 16px rgba(0,0,0,0.1); 
+	-moz-box-shadow: 
+	  inset 0 0 8px  rgba(0,0,0,0.1),
+			0 0 16px rgba(0,0,0,0.1); 
+	box-shadow: 
+	  inset 0 0 8px  rgba(0,0,0,0.1),
+			0 0 16px rgba(0,0,0,0.1); 
+	padding: 15px;
+	background: rgba(255,255,255,0.5);
+	margin: 0 0 10px 0;
 }
 form#userfeedback textarea{
-	width: 101%;
+	width: 93%;
 	height: 82px;
 }
 ol#feedback_touchbase{
 	width: 50%;
 }
 input#userfeedbacksubmit[type=submit]{
-	margin: 22px auto 22px 14px;
-	width: 80px;
-	height: 38px;
+	margin: 22px auto 22px 40px;
+	padding: 10px 15px;
 	border-radius: 0.7em;
 	display: block;
 	font-size: 1.1em;
 	letter-spacing: 2px;
+}
+input#userfeedbacksubmit[type=submit]:hover{
+	border: 5px solid rgb(240,240,240);
+	background: rgba(206,206,206,0.5);
 }
 p#thankyou{
 	margin-top: 0px;
