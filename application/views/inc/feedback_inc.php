@@ -1,4 +1,6 @@
 
+</div><!-- end of current page this div open tag is located at .../views/inc/navigation_public_inc.php -->
+
 <!-- User Testing Feedback -->
 <!-- .../views/inc/feeback.html -->
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
