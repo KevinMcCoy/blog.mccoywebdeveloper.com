@@ -17,58 +17,57 @@ class Views extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	private $data;
+
 	public function __construct() {
-        parent::__construct();
-		$data['currentPage'] = 'landing';
-		$this->load->view('inc/open_html_inc', $data);
-		$this->load->view('inc/navigation_public_inc', $data);
+		$rURI=$_SERVER['REQUEST_URI'];
+		$this->data['currentPage'] = substr($rURI, strrpos($rURI, '/') + 1);
+		$rURI=null;
+		parent::__construct();
+		$this->load->view('inc/open_html_inc', $this->data);
+		$this->load->view('inc/navigation_public_inc', $this->data);
     }
 
     public function index() {
+    	$this->landing();
     }
 
 	public function landing(){
 		//REPEAT:: $data need to be carried to here from line 22;
-		$data['currentPage'] = 'landing';
 		$this->load->view('landing_view');
-		$this->theEnd($data);
+		$this->theEnd();
 	}
 
 	public function slalomMain(){
-		$data['currentPage'] = 'slalomMain';
 		$this->load->view('slalomBlogs_view');
-		$this->theEnd($data);
+		$this->theEnd();
 	}
 
 	public function trickMain(){
-		$data['currentPage'] = 'trickMain';
 		$this->load->view('trickBlogs_view');
-		$this->theEnd($data);
+		$this->theEnd();
 	}
 
 	public function jumpMain(){
-		$data['currentPage'] = 'jumpMain';
 		$this->load->view('jumpBlogs_view');
-		$this->theEnd($data);
+		$this->theEnd();
 	}
 
 	public function overallMain(){
-		$data['currentPage'] = 'overallMain';
 		$this->load->view('overallBlogs_view');
-		$this->theEnd($data);
+		$this->theEnd();
 	}
 
 	public function about(){
 		$data['currentPage'] = 'slalomMain';
 		$this->load->view('about_view');
-		$this->theEnd($data);
+		$this->theEnd();
 	}
 
-
-	public function theEnd($data){
+	public function theEnd(){
 		$this->load->view('inc/footer_inc');
 		$this->load->view('inc/feedback_inc');
-		$this->load->view('inc/close_html_inc', $data);
+		$this->load->view('inc/close_html_inc', $this->data);
 	}
 
 }
