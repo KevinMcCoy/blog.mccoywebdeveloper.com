@@ -14,7 +14,7 @@
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		
 		<!-- Font to load from Google -->
-		<link href='http://fonts.googleapis.com/css?family=Snippet|Wendy+One|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Gafata|Snippet|Wendy+One|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 
 		<!-- Other font, not being used
 			<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>

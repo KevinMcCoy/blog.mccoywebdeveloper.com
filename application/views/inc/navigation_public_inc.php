@@ -13,7 +13,7 @@
 		<div id="header" class="public">
 			<div id="nav_wrapper">
 			<!-- ### LOGO -->
-			<h1 class="logo"><a href="<?= base_url('index.php/') ?>">McCoy Developer</a></h1>
+			<a href="<?= base_url('index.php/') ?>"><h1 class="logo">McCoy Developer</h1></a>
 				<!-- ### Navigation Bar to the four Main Blog pages -->
 					<ul id="nav">
 						<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>

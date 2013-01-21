@@ -9,6 +9,9 @@
 .clearBoth{
 	clear: both;
 }
+ul{
+	list-style: none;
+}
 
 /* ##### Font Setup #####*/
 h1 a{
@@ -28,15 +31,36 @@ h2{
 	text-decoration: none;
 }
 h3{
+	font-family: 'Wendy One', sans-serif;
+	color: rgb(30, 32, 30);
 	text-align: center;
-	font-size: 1.8em;
-	margin: 18px 0px 12px;
+	font-size: 2em;
+	margin: 24px 0px 24px;
 }
 h4{
+	font-family: 'Gafata', sans-serif;
 	text-align: center;
 	color: rgb(30, 32, 30);
 	font-size: 1.4em;
 	margin: 18px 0px 12px;
+}
+h5{
+	font-family: 'Snippet', sans-serif;
+	text-align: left;
+	color: rgb(30, 32, 30);
+	font-size: 1em;
+	margin: 18px 0px 12px;
+}
+p{
+	font-family: 'Gafata', sans-serif;
+	text-align: left;
+	color: rgb(8, 10, 8);
+	font-size: 1em;
+	letter-spacing: 1px;
+	margin: 12px 0px 8px;
+}
+p.inline{
+	display: inline;
 }
 
 /* ##### Navgation #####*/
