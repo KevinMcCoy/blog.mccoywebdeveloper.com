@@ -35,7 +35,8 @@
 	</ul><!--[END]#siteInfo-->
 </a>
 
-<a class="landingBtn" href="<?= base_url('register') ?>">Click to be part of the Water Ski Community</a>
+
+<span class="clearBoth"><a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Check out Water Ski Community at Google +</a></span>
 
 <!-- [End] of file views/landing_view.php -->
 <!-- Location: .../application/views/landing_views.php -->

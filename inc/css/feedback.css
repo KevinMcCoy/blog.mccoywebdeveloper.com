@@ -6,9 +6,11 @@
 /*===================================================*/
 /*  User Feedback */
 /*===================================================*/
-
 div#user_testing{
-	padding: 40px;
+	margin-top: 95px;
+	clear: both;
+	border-top: solid black 2px;
+	padding: 0 40px 40px;
 	background-color: rgb(225, 236, 240);
 }
 div#user_testing p{

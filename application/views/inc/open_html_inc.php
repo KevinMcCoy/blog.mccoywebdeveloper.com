@@ -22,6 +22,7 @@
 	 	-->
 
 		<!-- Venders CSS -->
+		<!-- TODO::  Change to load only two CSS per page -->
 		<link rel="stylesheet" href="<?= base_url('inc/css/vendors/normalize.css') ?>">
 		<link rel="stylesheet" href="<?= base_url('inc/css/feedback.css') ?>">
 		<link rel="stylesheet" href="<?= base_url('inc/css/landing.css') ?>">

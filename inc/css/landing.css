@@ -5,14 +5,9 @@
 /*===============================================================*/
 /*  Landing Page CSS*/
 /*===============================================================*/
-div#center{
-	text-align: center;
-	clear: both;
-	margin-top: 46px;
-}
 ul#siteInfo{
-	display: block;
-	margin: 0px auto 60px;
+	float: left;
+	margin: 0px auto 80px;
 	list-style-type: none;
 }
 ul#siteInfo li{
@@ -21,7 +16,6 @@ ul#siteInfo li{
 	width:202px;
 	margin-left: 0px;
 	margin-right: 26px;
-	padding-top: 26px;
 }
 ul#siteInfo li p{
 	text-shadow: 0 2px 0 rgba(255, 255, 255, .8);
@@ -36,24 +30,71 @@ ul#siteInfo li:hover{
 	-o-transform: scale(1.1,1.1);
 	transform: scale(1.1,1.1);
 }
-ul#siteInfo h3{
- 	text-align: center;
- 	margin-bottom: 0px;
- 	font-size: 1.4em;
-}
-.landingBtn{
+
+/* ##### Buttons #####*/
+a.landingBTN {
+	display: block;
 	clear: both;
 	margin: 0 auto;
 	text-align: center;
 	text-decoration: none;
-	display: block;
 	width: 280px;
-	padding: 5px;
-	padding-top: 12px;
-	color: black;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
-	letter-spacing: 1px;
+	color: #060a06;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#e4f2f5 0%,
+		#b6b9d6);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#e4f2f5),
+		to(#b6b9d6));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #0c3e96;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(184,198,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(184,198,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(184,198,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
 }
-.landingBtn:hover{
+
+.landingBTN:hover{
+	color: rgb(30, 32, 30);
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		rgb(217, 234, 238) 0%,
+		rgb(165, 177, 206));
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(rgb(217, 234, 238)),
+		to(rgb(165, 177, 206)));
+	border: 3px solid #0c3e96;
+	border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(184,198,255,1);
+		-moz-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 3px rgba(184,198,255,1);
+		-webkit-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 3px rgba(184,198,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
 }
 /*======================= [END] Landing Page ========*/

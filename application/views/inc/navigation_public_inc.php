@@ -10,7 +10,7 @@
 					else if($currentPage == "overallMain") echo 'overall_page';
 					else echo $currentPage . '_page'; ?>" class="wrapper clearfix">
 
-		<div id="header_public">
+		<div id="header" class="public">
 			<div id="nav_wrapper">
 			<!-- ### LOGO -->
 			<h1 class="logo"><a href="<?= base_url('index.php/') ?>">McCoy Developer</a></h1>
@@ -34,6 +34,6 @@
 				</form>
 			</div> -->
 
-			<h2><a href="<?= base_url('index.php/Views/about') ?>">3-Event Water Skiing</a></h2>
+			<a href="<?= base_url('index.php/Views/about') ?>"><h2>3-Event Water Skiing</h2></a>
 
 		</div><!-- [END] #header-public -->
