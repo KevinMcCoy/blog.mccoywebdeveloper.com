@@ -1,7 +1,7 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
 <div id="center">
-	<h2>Jump</h2>
+	<h3>Jump</h3>
 </div>
 
 <ul id="jumpBlog">

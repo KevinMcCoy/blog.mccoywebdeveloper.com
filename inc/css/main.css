@@ -23,13 +23,19 @@ h2{
 	font-size: 3.5em;
 	float: left;
 	text-align: center;
-	color:#3A3A3A;
+	color:rgb(30, 32, 30);
 	width:100%;
 	text-decoration: none;
 }
 h3{
- 	text-align: center;
- 	font-size: 1.4em;
+	text-align: center;
+	font-size: 1.8em;
+	margin: 18px 0px 12px;
+}
+h4{
+	text-align: center;
+	color: rgb(30, 32, 30);
+	font-size: 1.4em;
 	margin: 18px 0px 12px;
 }
 
@@ -72,7 +78,6 @@ ul#nav li a:hover, ul#nav li.current a{
 
 
 /* ##### Layout #####*/
-
 .wrapper{
 	margin: 14px auto;
 	width: 960px;
@@ -89,7 +94,7 @@ div#header{
 div#nav_wrapper{
 	border-bottom: solid 1px black;
 	width: 900px;
-	margin: 22px auto;
+	margin: 28px;
 	height: 30px;
 }
 h1.logo{

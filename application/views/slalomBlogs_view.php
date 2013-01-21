@@ -1,7 +1,7 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
 <div id="center">
-	<h2>Slalom</h2>
+	<h3>Slalom</h3>
 </div>
 
 <ul id="slalomBlog">
