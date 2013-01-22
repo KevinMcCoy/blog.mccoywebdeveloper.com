@@ -1,6 +1,6 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
-<div id="center">
+<div id="center" style="display:none; visibility:hidden;">
 	<h3>Trick</h3>
 </div>
 
