@@ -14,11 +14,12 @@
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		
 		<!-- Font to load from Google -->
-		<link href='http://fonts.googleapis.com/css?family=Gafata|Snippet|Wendy+One|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Mouse+Memoirs|Roboto+Condensed:400,700|Gafata|Snippet|Wendy+One|Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 
 		<!-- Other font, not being used
 			<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 			<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco|Give+You+Glory|The+Girl+Next+Door|Grand+Hotel' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
 	 	-->
 
 		<!-- Venders CSS -->
