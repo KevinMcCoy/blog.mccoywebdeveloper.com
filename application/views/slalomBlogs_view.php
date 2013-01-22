@@ -11,10 +11,12 @@
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 		<h5>Slalom Ski:</h5>
 		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
-<span class="socialmedia">
-<!-- Google +1 button --> <div class="g-plusone" data-size="tall" data-annotation="inline" data-width="300"></div>
-<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-</span>
+		<span class="socialmedia">
+			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
+		</span>
+		<span class="socialmedia">
+			<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true" float="right"></div>
+		</span>
 	</li>
 	<hr class="style_one" />
 	<li>
@@ -22,6 +24,12 @@
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 		<h5>Slalom Ski:</h5>
 		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+		<span class="socialmedia">
+			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
+		</span>
+		<span class="socialmedia">
+			<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true" float="right"></div>
+		</span>
 	</li>
 	<hr class="style_two" />
 	<li>
@@ -29,6 +37,12 @@
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 		<h5>Slalom Ski:</h5>
 		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+		<span class="socialmedia">
+			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
+		</span>
+		<span class="socialmedia">
+			<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true" float="right"></div>
+		</span>
 	</li>
 </ul><!--[END]#slalomBlog-->
 
