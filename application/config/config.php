@@ -18,11 +18,8 @@ $config['base_url'] = 'http://127.0.0.1/McCoyDeveloper/';
 
 switch (ENVIRONMENT) {
 	case 'local': $config['base_url'] = 'http://127.0.0.1/McCoyDeveloper/'; break;
-
-	case 'serverTesting': $config['base_url'] = ''; break;
-
+	case 'serverTesting': $config['base_url'] = 'http://www.mccoywebdeveloper.com/'; break;
 	case 'devlive':	$config['base_url'] = ''; break;
-
 	case 'live': $config['base_url'] = ''; break;
 };
 

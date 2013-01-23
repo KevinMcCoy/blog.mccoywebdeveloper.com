@@ -28,8 +28,9 @@ class Views extends CI_Controller {
 		$this->load->view('inc/navigation_public_inc', $this->data);
     }
 
-    public function index() {
-    	$this->landing();
+	public function index() {
+    	//TODO:: Make 404 for robots
+		$this->landing();
     }
 
 	public function landing(){
