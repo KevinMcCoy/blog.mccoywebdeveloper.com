@@ -18,11 +18,13 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	if($_SERVER['HTTP_HOST'] == '127.0.0.1' || $_SERVER['HTTP_HOST'] == 'localhost'){
+	$ServerHH = $_SERVER['HTTP_HOST'];
+	if($ServerHH == '127.0.0.1' || $ServerHH == 'localhost'){
 		define('ENVIRONMENT', 'local');
 	}else{
 		define('ENVIRONMENT', 'serverTesting');
 	};
+	$ServerHH = null;
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
