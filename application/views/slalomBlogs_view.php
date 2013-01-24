@@ -37,9 +37,13 @@
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 		<h5>Slalom Ski:</h5>
 		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
-		<span class="socialmedia">
+
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-annotation="inline" data-width="300"></div>
+
+
 			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
-		</span>
+
 		<span class="socialmedia">
 			<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true" float="right"></div>
 		</span>
@@ -49,6 +53,7 @@
 <a class="landingBTN" href="<?= base_url('register') ?>">Click to be part of the Water Ski Community</a>
 
 <!-- [End] of file views/landing_view.php -->
+
 <!-- Place this tag after the last +1 button tag. -->
 <script type="text/javascript">
   (function() {
