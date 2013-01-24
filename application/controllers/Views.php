@@ -64,6 +64,11 @@ class Views extends CI_Controller {
 		$this->load->view('about_view');
 		$this->theEnd();
 	}
+	public function wip(){
+		$data['currentPage'] = 'wip';
+		$this->load->view('wip.html');
+		$this->theEnd();
+	}
 
 	public function theEnd(){
 		$this->load->view('inc/footer_inc');
