@@ -22,7 +22,7 @@
 		<div id="header" class="public">
 			<div id="nav_wrapper">
 			<!-- ### LOGO -->
-			<a href="<?= base_url('index.php/') ?>"><h1 class="logo">McCoy Developer</h1></a>
+			<a href="<?= base_url('index.php/') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
 				<!-- ### Navigation Bar to the four Main Blog pages -->
 					<ul id="nav">
 						<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>
@@ -43,6 +43,6 @@
 				</form>
 			</div> -->
 
-			<a href="<?= base_url('index.php/Views/about') ?>"><h2>3-Event Water Skiing</h2></a>
+			<a href="<?= base_url('index.php/Views/about') ?>"><h2>Title of page here</h2></a>
 
 		</div><!-- [END] #header-public -->
