@@ -1,4 +1,5 @@
 
+<!-- [START] views/inc/navigation_public_inc.php -->
 <body>
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
@@ -42,7 +43,5 @@
 					<input id="loginBTN" class="login login_btn" type="submit" value="Log in">
 				</form>
 			</div> -->
-
-			<a href="<?= base_url('index.php/Views/about') ?>"><h2>Title of page here</h2></a>
-
 		</div><!-- [END] #header-public -->
+<!-- [END] views/inc/navigation_public_inc.php -->
