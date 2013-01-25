@@ -15,28 +15,28 @@
 			<a href="<?= base_url('index.php/Views/slalomMain') ?>">
 				<h4>Slalom Ski</h4>
 				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" width="200" height="200" />
-				<p>Goal to go around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+				<p>Goal to go around six buoys in a ski course. The boat’s top speed is 36 MPHs</p>
 			</a>
 		</li>
 		<li class="trick">
 			<a href="<?= base_url('index.php/Views/wip') ?>">
 				<h4>Trick Ski</h4>
 				<img src="<?= base_url('inc/img/trick_landing.jpg') ?>" alt="Trick Skiier doing a flip" width="200" height="200" />
-				<p>The skier has a time limit to perform tricks that are worth points.  The boat speed varies any were from 12 to 24 MPHs.</p>
+				<p>The skier has a thirty seconds limit to perform tricks that are worth points</p>
 			</a>
 		</li>
 		<li class="jump">
 			<a href="<?= base_url('index.php/Views/wip') ?>">
 				<h4>Jump Ski</h4>
 				<img src="<?= base_url('inc/img/jump_landing.png') ?>" alt="Jump Skiier flying in the sky" width="200" height="200" />
-				<p>Skier gose over a five to six feet fiberglass ramp. The boat’s top speed is 45MPHs. The world record holder in jump skiing flew over 300 feet in the air.</p>
+				<p>Skier goes over a five to six feet fiberglass ramp. The boat’s top speed is 45MPHs</p>
 			</a>
 		</li>
 		<li class="overall">
 			<a href="<?= base_url('index.php/Views/wip') ?>">
 				<h4>Overall 3-Event</h4>
 				<img src="<?= base_url('inc/img/overall_landing.png') ?>" alt="Overall Winners" width="200" height="200" />
-				<p>Scoring works is it adds slalom, trick, and jump scores together.  The combined score will show who wins in the Three Event.</p>
+				<p>Adds slalom, trick, and jump scores together and determine the overall winner</p>
 			</a>
 		</li>
 	</ul><!--[END]#siteInfo-->
