@@ -43,20 +43,21 @@ class Views extends CI_Controller {
 		$this->load->view('slalomBlogs_view');
 		$this->theEnd();
 	}
+	public function slalomStory(){
+		$this->load->view('slalomBlogs_view');
+		$this->theEnd();
+	}
 
 	public function trickMain(){
-		$this->load->view('trickBlogs_view');
-		$this->theEnd();
+		$this->wip();
 	}
 
 	public function jumpMain(){
-		$this->load->view('jumpBlogs_view');
-		$this->theEnd();
+		$this->wip();
 	}
 
 	public function overallMain(){
-		$this->load->view('overallBlogs_view');
-		$this->theEnd();
+		$this->wip();
 	}
 
 	public function about(){
