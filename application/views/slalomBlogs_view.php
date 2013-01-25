@@ -5,11 +5,12 @@
 </div>
 
 <ul class="blogsShort">
-	<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 	<li>
-		<!-- <div id="invoice">Image Slice 1</div> -->
-		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-		<h5>Slalom Ski:</h5>
+		<a href="<?= base_url('index.php/Views/slalomStory') ?>">
+			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
+			<h5>Slalom Ski Title One</h5>
+			<h6>Kevin McCoy 01/02/2013</h6>
+		</a>
 		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		<span class="socialmedia">
 			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
@@ -18,12 +19,14 @@
 			<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true" float="right"></div>
 		</span>
 	</li>
-	<hr class="style_one" />
+	<hr class="style_two" />
 	<li>
-		<!-- <div id="invoice">Image Slice 1</div> -->
-		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-		<h5>Slalom Ski:</h5>
-		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+		<a href="<?= base_url('index.php/Views/slalomStory') ?>">
+			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
+			<h5>Slalom Ski Title Two</h5>
+			<h6>Kevin McCoy 01/02/2013</h6>
+		</a>
+		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		<span class="socialmedia">
 			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
 		</span>
@@ -35,8 +38,9 @@
 	<li>
 		<!-- <div id="invoice">Image Slice 1</div> -->
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-		<h5>Slalom Ski:</h5>
-		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+		<h5>Slalom Ski Title Three</h5>
+		<h6>Kevin McCoy 01/02/2013</h6>
+		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 
 <!-- Place this tag where you want the +1 button to render. -->
 <div class="g-plusone" data-annotation="inline" data-width="300"></div>
