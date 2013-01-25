@@ -72,7 +72,7 @@ class Views extends CI_Controller {
 
 	public function theEnd(){
 		$this->load->view('inc/footer_inc');
-		$this->load->view('inc/feedback_inc');
+		// $this->load->view('inc/feedback_inc');
 		$this->load->view('inc/close_html_inc', $this->data);
 	}
 
