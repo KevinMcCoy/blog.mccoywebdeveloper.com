@@ -5,14 +5,15 @@
 /*===============================================================*/
 /*  Main Page CSS*/
 /*===============================================================*/
-/* ##### KRM Set #####*/
+/* ##### KRM Set ################################################*/
 .clearBoth{
 	clear: both;
 }
 ul{
 	list-style: none;
 }
-/* ##### Font Setup #####*/
+
+/* ##### Font Setup #############################################*/
 /* Company's Logo */
 h1{
 	font-family: 'Snippet', sans-serif;
@@ -51,7 +52,11 @@ h5{
 	text-align: left;
 	color: rgb(30, 32, 30);
 	font-size: 1.5em;
-	margin: 0px 0px 12px;
+	margin: 0px 0px 2px;
+}
+h6{
+	margin: 2px 0 16px;
+	font-weight: 100;
 }
 p{
 	color: #333333;
@@ -65,8 +70,13 @@ p{
 p.inline{
 	display: inline;
 }
+/* ##### Hover Over #################################################*/
+a{
+	;
+}
 
-/* ##### Navgation #####*/
+
+/* ##### Navgation #################################################*/
 div.table{
 	display: table;
 	margin: 0 auto;
@@ -193,11 +203,11 @@ hr.style_two{
 	text-align: center;
 	border: 0;
 	height: 1px;
-	width: 800px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.15), rgba(0,0,0,0.75), rgba(0,0,0,0.2)); 
-	background-image:	-moz-linear-gradient(left, rgba(0,0,0,0.15), rgba(0,0,0,0.75), rgba(0,0,0,0.2)); 
-	background-image:	 -ms-linear-gradient(left, rgba(0,0,0,0.15), rgba(0,0,0,0.75), rgba(0,0,0,0.2)); 
-	background-image:	  -o-linear-gradient(left, rgba(0,0,0,0.15), rgba(0,0,0,0.75), rgba(0,0,0,0.15)); 
+	width: 600px;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
+	background-image:	-moz-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
+	background-image:	 -ms-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
+	background-image:	  -o-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
 }
 
 /*======================= [END] Main.css ========*/
