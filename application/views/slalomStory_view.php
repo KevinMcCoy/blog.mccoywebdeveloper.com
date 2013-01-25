@@ -14,7 +14,6 @@
 	</li>
 </ul><!--[END]#slalomBlog-->
 
-<a class="landingBTN" href="<?= base_url('register') ?>">Click to be part of the Water Ski Community</a>
 
 <!-- [End] of file views/landing_view.php -->
 <!-- Location: .../application/views/slalomStory_view.php -->
