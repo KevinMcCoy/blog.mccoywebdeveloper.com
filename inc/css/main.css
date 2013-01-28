@@ -20,7 +20,7 @@ h1{
 	font-family: 'Snippet', sans-serif;
 	font-size: 2.1em;
 	color: rgba(58, 58, 58, .8);
-	margin: 0px
+	margin-top: 14px
 }
 h1:hover{
 	font-family: 'Snippet', sans-serif;
@@ -64,12 +64,21 @@ p, a{
 p{
 	color: rgba(58, 58, 58, 1);
 }
+a.blog p{
+	color: rgba(58, 58, 58, .7);
+	font-size: .9em;
+	text-align: right;
+	margin: 0px 20px;
+	text-decoration: underline;
+}
+
+/* Navigation */
 ul#nav li a{
 	color: rgba(58, 58, 58, 0.72);
 	font-weight: 600;
 }
 /* ##### HoverOver #################################################*/
-a:hover, h3:hover{
+a:hover, h3:hover, a.blog p:hover{
 	color: rgba(58, 58, 58, 1);
 	text-decoration: underline;
 }
@@ -95,7 +104,7 @@ div#header{
 	position: relative;
 }
 div#nav_wrapper{
-	position: absolute;
+	height: 8em;
 	top: 50%;
 	width: 100%;
 	margin-top: -5em
