@@ -92,8 +92,8 @@ a h3:hover, a.blog p:hover{
 /*##########################################################################*/
 
 body{
+	position: relative;
 	background: url("../bg/black_paper.png") repeat;
-	opacity:0.9;
 /*	background: url("../bg/dirty_old_shirt.png") repeat;
 */}
 /* Wrap entire page except for feedback */
@@ -109,10 +109,12 @@ body{
 	background: url("../bg/pp.jpg");
 	background: url("../bg/Natural-Paper-Palette/deepsea.jpg"); */
 	background: url("../bg/Natural-Paper-Palette/eggshell.jpg");
-
-
-	
-
+ 	opacity:.90; 
+		-khtml-opacity:.8; 
+		-moz-opacity:.8;
+		-ms-filter:"alpha(opacity=80)";
+  		filter:alpha(opacity=80);
+  		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);
 }
 div.left{
 	float: left;
