@@ -41,7 +41,7 @@
 		</li>
 	</ul><!--[END]#siteInfo-->
 
-<span class="clearBoth"><a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Check out Water Ski Community at Google +</a></span>
+<span class="clearBoth"><a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Google + 3-Event Community</a></span>
 
 <!-- [End] of file views/landing_view.php -->
 <!-- Location: .../application/views/landing_views.php -->
