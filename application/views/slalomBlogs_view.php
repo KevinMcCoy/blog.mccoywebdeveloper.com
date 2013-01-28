@@ -27,7 +27,7 @@
 			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 			<a class="blog" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
 		</li>
-		<li><hr class="style_two" /></li>
+		<!-- <li><hr class="style_two" /></li>-->
 		<li>
 			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
 				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
@@ -44,9 +44,10 @@
 					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
 				</div>
 			</div>
-			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+			<p>I like to slalom ski. It is fun to slalom ski. Once I cross the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+			<a class="blog" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
 		</li>
-		<li><hr class="style_two" /></li>
+		<!-- <li><hr class="style_two" /></li> -->
 		<li>
 			<!-- <div id="invoice">Image Slice 1</div> -->
 			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />

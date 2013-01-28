@@ -75,19 +75,27 @@ a.blog p{
 	text-decoration: underline;
 }
 
-/* Navigation */
+/* font - Navigation */
 ul#nav li a{
 	color: rgba(58, 58, 58, 0.72);
 	font-weight: 600;
 }
-/* ##### HoverOver #################################################*/
-a:hover, a h3:hover, a.blog p:hover{
+/* ##### font - HoverOver #################################*/
+a h3:hover, a.blog p:hover{
 	color: rgba(58, 58, 58, 1);
 	text-decoration: underline;
 }
 
 
-/* ##### Wrapper #####*/
+/*##########################################################################*/
+/*##### Layout Start Here - Wrapper - ######################################*/
+/*##########################################################################*/
+
+body{
+	background: url("../bg/black_paper.png") repeat;
+	opacity:0.9;
+/*	background: url("../bg/dirty_old_shirt.png") repeat;
+*/}
 /* Wrap entire page except for feedback */
 .wrapper{
 	margin: 14px auto;
@@ -97,21 +105,28 @@ a:hover, a h3:hover, a.blog p:hover{
 		-moz-box-shadow:0px 3px 6px #000;
 		-webkit-box-shadow:0px 3px 6px #000;
 	padding-bottom: 65px;
+/*	background: url("../bg/random_grey_variations.png")x
+	background: url("../bg/pp.jpg");
+	background: url("../bg/Natural-Paper-Palette/deepsea.jpg"); */
+	background: url("../bg/Natural-Paper-Palette/eggshell.jpg");
+
+
+	
+
 }
 div.left{
 	float: left;
-	width: 800px;
+	width: 785px;
 }
 div.right{
 	float: left;
-	width: 154px;
+	width: 170px;
 	border: solid red 2px;
 	height: 1000px;
-
 }
 
 
-/* ##### Header #####*/
+/* ##### Header ##########################################################*/
 /* Top part of page, contains Navigation and Login */
 div#header{
 	margin-top: 4em;
@@ -171,9 +186,9 @@ ul#nav li.current a{
 }
 
 
-
 /* ##### Short Blog pages #####*/
 ul.blogsShort{
+	margin: 0px auto;
 	padding: 0px 15px 0px 15px;
 }
 ul.blogsShort li{
@@ -276,12 +291,12 @@ a.landingBTN {
 		#b6b9d6);
 	background: -webkit-gradient(
 		linear, left top, left bottom, 
-		from(#e4f2f5),
-		to(#b6b9d6));
+		from(rgba(182, 185, 214, 0.78)),
+		to(#e4f2f5));
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	border: 3px solid #0c3e96;
+	border: 3px solid rgba(70, 117, 201, 0.7);
 	-moz-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
 		inset 0px 0px 3px rgba(184,198,255,1);
@@ -305,9 +320,9 @@ a.landingBTN {
 		rgb(165, 177, 206));
 	background: -webkit-gradient(
 		linear, left top, left bottom, 
-		from(rgb(217, 234, 238)),
-		to(rgb(165, 177, 206)));
-	border: 3px solid #0c3e96;
+		from(rgb(165, 177, 206)),
+		to(rgb(217, 234, 238)));
+	border: 3px solid rgba(70, 117, 201, 0.85);
 	border-radius: 10px;
 		-moz-border-radius: 10px;
 		-webkit-border-radius: 10px;
