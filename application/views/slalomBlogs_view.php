@@ -8,9 +8,9 @@
 	<li>
 		<a href="<?= base_url('index.php/Views/slalomStory') ?>">
 			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-			<h5>Slalom Ski Title One</h5>
-			<h6>Kevin McCoy 01/02/2013</h6>
+			<h3>Slalom Ski Title One</h3>
 		</a>
+		<h4>Kevin McCoy 01/02/2013</h4>
 		<p class="inline">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		<span class="socialmedia">
 			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
@@ -23,9 +23,9 @@
 	<li>
 		<a href="<?= base_url('index.php/Views/slalomStory') ?>">
 			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-			<h5>Slalom Ski Title Two</h5>
-			<h6>Kevin McCoy 01/02/2013</h6>
+			<h3>Slalom Ski Title Two</h3>
 		</a>
+		<h4>Kevin McCoy 01/02/2013</h4>
 		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		<span class="socialmedia">
 			<!-- Google +1 button --><div class="g g-plusone" data-size="tall" data-annotation="none"></div>
@@ -38,8 +38,8 @@
 	<li>
 		<!-- <div id="invoice">Image Slice 1</div> -->
 		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
-		<h5>Slalom Ski Title Three</h5>
-		<h6>Kevin McCoy 01/02/2013</h6>
+		<h3>Slalom Ski Title Three</h3>
+		<h4>Kevin McCoy 01/02/2013</h4>
 		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 
 <!-- Place this tag where you want the +1 button to render. -->
