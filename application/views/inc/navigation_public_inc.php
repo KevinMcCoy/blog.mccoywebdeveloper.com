@@ -39,7 +39,7 @@
 			<!-- Logo and Navigation is contained in this div -->
 			<div id="nav_wrapper">
 			<!-- ### LOGO -->
-			<a href="<?= base_url('index.php/') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
+			<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
 				<!-- ### Navigation Bar to the four Main Blog pages -->
 					<ul id="nav">
 						<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>
