@@ -18,7 +18,12 @@ ul{
 h1{
 	font-family: 'Snippet', sans-serif;
 	font-size: 2.1em;
-	color:#3A3A3A;
+	color: rgba(58, 58, 58, .8);
+	margin: 0px
+}
+h1:hover{
+	font-family: 'Snippet', sans-serif;
+	color: rgba(58, 58, 58, 1);
 }
 /* Site Main Title (TODO:: change to h1 and have h1 an logo class)*/
 h2{
@@ -43,7 +48,7 @@ h3{
 h4{
 	font-family: 'Roboto+Condensed', sans-serif;
 	text-align: center;
-	color: rgb(30, 32, 30);
+	color: rgba(58, 58, 58, .95);
 	font-size: 1.4em;
 	margin: 18px 0px 12px;
 }
@@ -58,23 +63,20 @@ h6{
 	margin: 2px 0 16px;
 	font-weight: 100;
 }
-p{
-	color: #333333;
+p, a{
 	font-family: Tahoma, Geneva, sans-serif;
 	text-align: left;
-	color: rgb(8, 10, 8);
 	font-size: 1em;
 	letter-spacing: 1px;
 	margin: 12px 0px 8px;
 }
-p.inline{
-	display: inline;
+p{
+	color: rgba(58, 58, 58, 1);
 }
-/* ##### Hover Over #################################################*/
-a{
-	;
+ul#nav li a{
+	color: rgba(58, 58, 58, 0.72);
+	font-weight: 600;
 }
-
 
 /* ##### Navgation #################################################*/
 div.table{
@@ -95,58 +97,60 @@ ul#nav li a {
 	text-decoration:none;
 	display: block;
 	padding:5px 21px;
-	background:#5F3222;
-	color:#eee;
 	float:left;
 	text-align:center;
-	border-top:2px solid #815444;
-	border-right:2px solid #3d1000;
-	border-bottom:2px solid #3d1000;
-	border-left:2px solid #815444;
+	border-top:8px solid transparent;
+	border-bottom:8px solid transparent;
 }
 ul#nav li a:hover, ul#nav li.current a{
-	background:#a37666;
-	color:#000;
-	border-top:2px solid #815444;
-	border-right:2px solid #c59888;
-	border-bottom:2px solid #c59888;
-	border-left:2px solid #815444;
+	color: rgba(58, 58, 58, 0.95);
+	border-top:8px solid rgba(105, 54, 36, 1);
+	border-bottom:8px solid transparent;
+}
+ul#nav li.current a{
+	border-top:8px solid rgba(105, 54, 36, 0.63);
 }
 
 
-/* ##### Layout #####*/
+/* ##### Wrapper #####*/
+/* Wrap entire page except for feedback */
 .wrapper{
 	margin: 14px auto;
+	padding: 32px;
 	width: 960px;
 	box-shadow: 0px 3px 6px #000;
 		-moz-box-shadow:0px 3px 6px #000;
 		-webkit-box-shadow:0px 3px 6px #000;
 	padding-bottom: 65px;
 }
+
+/* ##### Header #####*/
+/* Top part of page, contains Navigation and Login */
 div#header{
-	overflow: auto;
-	margin: 0 auto;
-	display: block;
+	margin-top: 4em;
+	position: relative;
 }
 div#nav_wrapper{
-	width: 900px;
-	margin: 28px;
-	height: 30px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 10em;
+	margin-top: -5em
+}
+ul#nav{
+	float: right;
 }
 h1.logo{
 	float: left;
-	margin-top: -1px;
 }
 h1.logo a{
 	margin: 0px;
 	text-align: left;
 	text-decoration: none;
 }
-ul#nav{
-	float: right;
-}
+/* #[END] Header #####*/
 
-/* ##### Layout #####*/
+
 /* ##### Short Blog pages #####*/
 ul.blogsShort{
 	padding: 0px 15px 0px 15px;
@@ -183,6 +187,7 @@ span.socialmedia .fb-like{
 	bottom: 30px;
 	right: 0px;
 }
+
 
 /* ##### Horizontal Rules ##### */
 hr.style_one{
