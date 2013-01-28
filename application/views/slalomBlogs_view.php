@@ -33,7 +33,17 @@
 				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 				<h3>Slalom Ski Title Two</h3>
 			</a>
-			<h4>Kevin McCoy 01/02/2013</h4>
+			<div class="social">
+				<h4>Kevin McCoy 01/02/2013</h4>
+				<!-- Google +1 button -->
+				<div class="googleplus">
+					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+				</div>
+				<!-- Facebook like button -->
+				<div class="facebook">
+					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+				</div>
+			</div>
 			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		</li>
 		<li><hr class="style_two" /></li>
