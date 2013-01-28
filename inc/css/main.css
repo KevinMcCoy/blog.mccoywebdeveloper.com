@@ -95,6 +95,17 @@ a:hover, h3:hover, a.blog p:hover{
 		-webkit-box-shadow:0px 3px 6px #000;
 	padding-bottom: 65px;
 }
+div.left{
+	float: left;
+	width: 800px;
+}
+div.right{
+	float: left;
+	width: 154px;
+	border: solid red 2px;
+	height: 300px;
+
+}
 
 
 /* ##### Header #####*/
