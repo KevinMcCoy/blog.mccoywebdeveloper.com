@@ -10,7 +10,18 @@
 	<ul id="story">
 		<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 		<li>
-			<h3 class='m'>Slalom Ski</h3>
+			<h3>Slalom Ski</h3>
+			<div class="social wide">
+				<h4 class="tempTest">Kevin McCoy 01/02/2013</h4>
+				<!-- Facebook like button -->
+				<div class="facebook">
+					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+				</div>
+				<!-- Google +1 button -->
+				<div class="googleplus">
+					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+				</div>
+			</div>
 			<img src="<?= base_url('inc/img/slalom_landing_full.png')?>" width="700" height="560" alt="Slalom Skiier just before dusk" />
 			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 		</li>
