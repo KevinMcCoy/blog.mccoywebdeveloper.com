@@ -25,45 +25,34 @@ h1:hover{
 	font-family: 'Snippet', sans-serif;
 	color: rgba(58, 58, 58, 1);
 }
-/* Site Main Title (TODO:: change to h1 and have h1 an logo class)*/
-h2{
-	font-family: ‘Times New Roman’, Times, serif;
-	margin: 30px 0 38px;
-	height: 60px;
-	font-size: 2.8em;
-	float: left;
-	text-align: center;
-	color:rgb(30, 32, 30);
-	width:100%;
-	text-decoration: none;
-}
-h3{
-	font-family: 'Wendy One', sans-serif;
-	color: rgb(30, 32, 30);
-	text-align: center;
-	font-size: 2em;
-	margin: 24px 0px 24px;
-}
 /* Title for Image on landing page */
-h4{
+h2{
 	font-family: 'Roboto+Condensed', sans-serif;
 	text-align: center;
 	color: rgba(58, 58, 58, .95);
 	font-size: 1.4em;
 	margin: 18px 0px 12px;
 }
-h5{
+
+/* Title to Blog story*/
+h3{
 	font-family: 'Mouse+Memoirs', sans-serif;
 	text-align: left;
-	color: rgb(30, 32, 30);
+	color: rgba(58, 58, 58, .8);
 	font-size: 1.5em;
 	margin: 0px 0px 2px;
 }
-h6{
+
+/* Blog writer name and/or date */
+h4{
+	color: rgba(58, 58, 58, .75);
+	font-size: .7em;
 	margin: 2px 0 16px;
 	font-weight: 100;
 }
+
 p, a{
+	text-decoration: none;
 	font-family: Tahoma, Geneva, sans-serif;
 	text-align: left;
 	font-size: 1em;
@@ -77,6 +66,12 @@ ul#nav li a{
 	color: rgba(58, 58, 58, 0.72);
 	font-weight: 600;
 }
+/* ##### HoverOver #################################################*/
+a:hover, h3:hover{
+	color: rgba(58, 58, 58, 1);
+	text-decoration: underline;
+}
+
 
 /* ##### Navgation #################################################*/
 div.table{
