@@ -13,6 +13,10 @@
 	<!--[if lt IE 7]>
 		<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
 	<![endif]-->
+
+	<!--**  I am using this id to lable page 
+		**	I can use this with jQuery insted of using the url.
+		**  This way is more flexable  [END]-->
 	<div id="<?php if($currentPage == "landing") echo 'landing_page';
 					else if($currentPage == "slalomMain") echo 'slalom_page';
 					else if($currentPage == "trickMain") echo 'trick_page';
@@ -21,18 +25,6 @@
 					else echo $currentPage . '_page'; ?>" class="wrapper clearfix">
 
 		<div id="header" class="public">
-			<div id="nav_wrapper">
-			<!-- ### LOGO -->
-			<a href="<?= base_url('index.php/') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
-				<!-- ### Navigation Bar to the four Main Blog pages -->
-					<ul id="nav">
-						<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>
-						<?php if($currentPage == 'trickMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickMain') ?>">Trick</a></li>
-						<?php if($currentPage == 'jumpMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpMain') ?>">Jump</a></li>
-						<?php if($currentPage == 'overallMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallMain') ?>">Overall</a></li>
-					</ul>
-			</div>
-			
 			<!-- ### Login -->
 			<!-- TEMPORY:: NOTES::  Ed says not to have login for current scope of the project -->
 			<!-- <div class="login">
@@ -43,5 +35,18 @@
 					<input id="loginBTN" class="login login_btn" type="submit" value="Log in">
 				</form>
 			</div> -->
+
+			<!-- Logo and Navigation is contained in this div -->
+			<div id="nav_wrapper">
+			<!-- ### LOGO -->
+			<a href="<?= base_url('index.php/') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
+				<!-- ### Navigation Bar to the four Main Blog pages -->
+					<ul id="nav">
+						<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>
+						<?php if($currentPage == 'trickMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickMain') ?>">Trick</a></li>
+						<?php if($currentPage == 'jumpMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpMain') ?>">Jump</a></li>
+						<?php if($currentPage == 'overallMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallMain') ?>">Overall</a></li>
+					</ul>
+			</div><!-- [END] #nav_wrapper -->
 		</div><!-- [END] #header-public -->
 <!-- [END] views/inc/navigation_public_inc.php -->
