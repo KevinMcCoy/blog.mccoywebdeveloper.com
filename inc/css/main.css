@@ -47,8 +47,9 @@ h3{
 h4{
 	color: rgba(58, 58, 58, .75);
 	font-size: .7em;
-	margin: 2px 0 16px;
+	margin: 0px 8px 0px 0px;
 	font-weight: 100;
+	display: inline-block;
 }
 
 p, a{
@@ -71,6 +72,45 @@ a:hover, h3:hover{
 	color: rgba(58, 58, 58, 1);
 	text-decoration: underline;
 }
+
+
+/* ##### Wrapper #####*/
+/* Wrap entire page except for feedback */
+.wrapper{
+	margin: 14px auto;
+	padding: 32px;
+	width: 960px;
+	box-shadow: 0px 3px 6px #000;
+		-moz-box-shadow:0px 3px 6px #000;
+		-webkit-box-shadow:0px 3px 6px #000;
+	padding-bottom: 65px;
+}
+
+
+/* ##### Header #####*/
+/* Top part of page, contains Navigation and Login */
+div#header{
+	margin-top: 4em;
+	position: relative;
+}
+div#nav_wrapper{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -5em
+}
+ul#nav{
+	float: right;
+}
+h1.logo{
+	float: left;
+}
+h1.logo a{
+	margin: 0px;
+	text-align: left;
+	text-decoration: none;
+}
+/* #[END] Header #####*/
 
 
 /* ##### Navgation #################################################*/
@@ -107,52 +147,14 @@ ul#nav li.current a{
 }
 
 
-/* ##### Wrapper #####*/
-/* Wrap entire page except for feedback */
-.wrapper{
-	margin: 14px auto;
-	padding: 32px;
-	width: 960px;
-	box-shadow: 0px 3px 6px #000;
-		-moz-box-shadow:0px 3px 6px #000;
-		-webkit-box-shadow:0px 3px 6px #000;
-	padding-bottom: 65px;
-}
-
-/* ##### Header #####*/
-/* Top part of page, contains Navigation and Login */
-div#header{
-	margin-top: 4em;
-	position: relative;
-}
-div#nav_wrapper{
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	height: 10em;
-	margin-top: -5em
-}
-ul#nav{
-	float: right;
-}
-h1.logo{
-	float: left;
-}
-h1.logo a{
-	margin: 0px;
-	text-align: left;
-	text-decoration: none;
-}
-/* #[END] Header #####*/
-
 
 /* ##### Short Blog pages #####*/
 ul.blogsShort{
 	padding: 0px 15px 0px 15px;
 }
 ul.blogsShort li{
-	position: relative;
-	width: 500px;
+/*	position: relative;
+*/	width: 500px;
 	margin: 15px 0 18px;
 	width: inherit;
 	overflow: hidden;
@@ -163,25 +165,21 @@ ul.blogsShort img{
 	float: left;
 	margin-right: 25px;
 }
-span.socialmedia{
+.social{
+	vertical-align: middle;
+}
 
+span{
+	display: inline-block;
 }
-div span.socialmedia{
-	text-align: right;
-	position: absolute;
-	width: 593px;
-	height: 45px;
-	bottom: 0px;
-	right: 5px;	
-}
-span.socialmedia .fb-like{
-	text-align: right;
-	position: absolute;
-	width: 593px;
-	height: 45px;
-	bottom: 30px;
-	right: 0px;
-}
+/*span div{
+	float: left;
+	top: 50%;
+	width: 100%;
+	height: 10em;
+	margin-top: -5em
+}*/
+
 
 
 /* ##### Horizontal Rules ##### */
@@ -211,3 +209,11 @@ hr.style_two{
 }
 
 /*======================= [END] Main.css ========*/
+
+
+
+
+
+
+
+
