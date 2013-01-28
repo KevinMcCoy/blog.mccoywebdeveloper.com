@@ -11,6 +11,11 @@
 }
 ul{
 	list-style: none;
+	padding: 0px;
+	overflow: visible;
+}
+li{
+	overflow: visible;
 }
 div.clear{clear:both;}
 
@@ -43,17 +48,22 @@ h3{
 	font-size: 1.5em;
 	margin: 0px;
 }
-h3.m{
-	margin-bottom: 14px;
-}
 
 /* Blog writer name and/or date */
 h4{
+	display: table-cell;
+	width: 150px;
+	margin: 0px 8px 0px 0px;
+	padding: 0px 30px 0px 0px;
+	vertical-align: middle;
 	color: rgba(58, 58, 58, .75);
 	font-size: .7em;
-	margin: 0px 8px 0px 0px;
 	font-weight: 100;
-	vertical-align: middle;
+}
+
+/*TEMPORY::*/
+h4.tempTest{
+	width: 300px;
 }
 
 p, a{
@@ -168,11 +178,14 @@ body{
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
+	  /* Validation Service Error *//* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake.jpg', sizingMethod='scale');  */
+	  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake.jpg', sizingMethod='scale')";
 	background-size: cover;
-	
+/* TESTING::  Other backgorund options - disliked */
 /*		background: url("../bg/black_paper.png") repeat;
 		background: url("../bg/dirty_old_shirt.png") repeat; */
 }
+
 /* Wrap entire page except for feedback */
 .wrapper{
 	margin: 14px auto;
@@ -190,12 +203,13 @@ body{
 		-khtml-opacity:.8; 
 		-moz-opacity:.8;
 		-ms-filter:"alpha(opacity=80)";
-  		filter:alpha(opacity=80);
-  		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);
+  	 	/* Validation Service Error *//*filter:alpha(opacity=80);*/
+  		/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
 }
 div.left{
 	float: left;
 	width: 785px;
+	overflow: visible;
 }
 div.right{
 	float: left;
@@ -292,6 +306,7 @@ hr.style_two{
 /* =================================================== [END] Navgation ===============*/
 
 
+
 /*##########################################################################*/
 /*##### Landing Page CSS ###################################################*/
 /*##########################################################################*/
@@ -335,7 +350,8 @@ ul#siteInfo li:hover{
 /*###################################################################################*/
 ul.blogsShort{
 	margin: 0px auto;
-	padding: 0px 15px 0px 15px;
+	padding: 0px 15px 0px 0px;
+	overflow: visible;
 }
 ul.blogsShort li{
 	width: 500px;
@@ -344,22 +360,30 @@ ul.blogsShort li{
 	overflow: hidden;
 	clear: both;
 	float: left;
+	overflow: visible;
 }
 ul.blogsShort img{
 	float: left;
 	margin-right: 25px;
 }
 div.social{
+	overflow: visible;
 	display: table-cell;
 }
-h4{
-	display: table-cell;
-	padding: 0px 30px 0px 0px;
+div.social.wide h4{
+	width: 400px;
 }
-
 div.googleplus, div.facebook{
 	display: table-cell;
 	vertical-align: top;
+}
+div.facebook{
+	text-align: right;
+	padding-top: 1px;
+}
+div.googleplus{
+	position: relative;
+	right: -27px;
 }
 
 /*##########################################################################*/
