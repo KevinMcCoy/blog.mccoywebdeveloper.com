@@ -10,7 +10,7 @@
 	<ul class="blogsShort">
 		<li>
 			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
-				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
+				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" width="200px" height="160px" alt="Slalom Skiier just before dusk" />
 				<h3>Slalom Ski Title One</h3>
 			</a>
 			<div class="social">
