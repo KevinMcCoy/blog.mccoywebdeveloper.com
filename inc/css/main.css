@@ -12,6 +12,7 @@
 ul{
 	list-style: none;
 }
+div.clear{clear:both;}
 
 /* ##### Font Setup #############################################*/
 /* Company's Logo */
@@ -153,8 +154,7 @@ ul.blogsShort{
 	padding: 0px 15px 0px 15px;
 }
 ul.blogsShort li{
-/*	position: relative;
-*/	width: 500px;
+	width: 500px;
 	margin: 15px 0 18px;
 	width: inherit;
 	overflow: hidden;
@@ -165,7 +165,7 @@ ul.blogsShort img{
 	float: left;
 	margin-right: 25px;
 }
-.social{
+div.social{
 	display: table-cell;
 }
 h4{
@@ -173,11 +173,11 @@ h4{
 	padding: 6px 30px 0px 0px;
 }
 
-span.googleplus{
+div.googleplus{
 	padding-top: 6px;
 }
 
-span.googleplus, span.facebook{
+div.googleplus, div.facebook{
 	display: table-cell;
 	vertical-align: middle;
 }
