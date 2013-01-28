@@ -44,7 +44,7 @@ class Views extends CI_Controller {
 		$this->theEnd();
 	}
 	public function slalomStory(){
-		$this->load->view('slalomBlogs_view');
+		$this->load->view('slalomStory_view');
 		$this->theEnd();
 	}
 
