@@ -12,18 +12,17 @@
 			<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 			<h3>Slalom Ski Title One</h3>
 		</a>
-<div class="social">
-
-		<h4>Kevin McCoy 01/02/2013</h4>
-
-		<span class="googleplus">
-			<!-- Google +1 button --><div class="g-plusone" size="small" data-annotation="inline" data-width="200"></div>
-		</span>
-
-		<span class="facebook">
-			<!-- Facebook like button --><div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-		</span>
-</div>
+		<div class="social">
+			<h4>Kevin McCoy 01/02/2013</h4>
+			<!-- Google +1 button -->
+			<span class="googleplus">
+				<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+			</span>
+			<!-- Facebook like button -->
+			<span class="facebook">
+				<div class="fb-like" data-send="true" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+			</span>
+		</div>
 		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
 	</li>
 
