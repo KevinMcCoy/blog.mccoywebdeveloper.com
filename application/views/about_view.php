@@ -13,14 +13,14 @@
 	<li id="detail_invoice" onclick="#siteInfo">
 		<img src="<?= base_url('inc/img/trick_landing.jpg') ?>" alt="Slalom Skiier just before dusk" />
 		<h3>Trick</h3>
-		<p>Trick skiing is on one much smaller ski and the footplates are set differently than a slalom ski.  The skier has a time limit to perform tricks that are worth points.  The boat speed varies on the rider’s preference; usually anywhere from 12mph to 24mph.</p>
+		<p>Trick skiing is on one or two much smaller ski/s and the footplates are set differently than a slalom ski.  The skier has a time limit to perform tricks that are worth points.  The boat speed varies on the rider’s preference; usually anywhere from 12mph to 24mph.</p>
 		<a href="<?= base_url('index.php/Views/slalomMain') ?>">Check out the Slalom blog</a>	
 	</li>
 	
 	<li id="detail_invoice" onclick="#siteInfo">
 		<img src="<?= base_url('inc/img/jump_landing.png') ?>" alt="Slalom Skiier just before dusk" />
 		<h3>Jump</h3>
-		<p>Jump skiing is where the skier skis on two skis. They are larger, longer, and wider than a slalom ski.  The skier swings from one side to the other, crossing the boat’s wake. A pro-skier can travel to a speed up to 90mph just before hitting a five or six feet fiberglass ramp. It can be hard to believe that the boat’s top speed is 45MPHs. The world record holder in jump skiing flew over 300 feet in the air.</p>
+		<p>Jump skiing is when the skier skis on two skis. They are larger, longer, and wider than a slalom ski.  The skier swings from one side to the other, crossing the boat’s wake. A pro-skier can travel to a speed up to 90mph just before hitting a five or six feet fiberglass ramp. It is hard to believe that the boat’s top speed is 45mph. The world record holder in jump skiing flew over 300 feet in the air.</p>
 		<a href="<?= base_url('index.php/Views/slalomMain') ?>">Check out the Slalom blog</a>	
 	</li>
 

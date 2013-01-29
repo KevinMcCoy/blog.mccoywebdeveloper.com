@@ -14,34 +14,34 @@
 		<li class="slalom">
 			<a href="<?= base_url('index.php/Views/slalomMain') ?>">
 				<h2>Slalom Ski</h2>
-				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" width="200" height="200" />
-				<p>Goal to go around six buoys in a ski course. The boat’s top speed is 36 MPHs</p>
+				<img src="<?= base_url('inc/img/landing/slalom_001.jpg') ?>" alt="Slalom Skiier just before dusk" width="200" height="200" />
+				<p>The goal is to go around six buoys in a ski course. The boat’s top speed is 36mph.</p>
 			</a>
 		</li>
 		<li class="trick">
 			<a href="<?= base_url('index.php/Views/wip') ?>">
 				<h2>Trick Ski</h2>
-				<img src="<?= base_url('inc/img/trick_landing.jpg') ?>" alt="Trick Skiier doing a flip" width="200" height="200" />
-				<p>The skier has a thirty seconds limit to perform tricks that are worth points</p>
+				<img src="<?= base_url('inc/img/landing/trick_001.jpg') ?>" alt="Trick Skiier doing a flip" width="200" height="200" />
+				<p>The skier has a time limit to perform tricks that are worth points.</p>
 			</a>
 		</li>
 		<li class="jump">
 			<a href="<?= base_url('index.php/Views/wip') ?>">
 				<h2>Jump Ski</h2>
-				<img src="<?= base_url('inc/img/jump_landing.png') ?>" alt="Jump Skiier flying in the sky" width="200" height="200" />
-				<p>Skier goes over a five to six feet fiberglass ramp. The boat’s top speed is 45MPHs</p>
+				<img src="<?= base_url('inc/img/landing/jump_001.jpg') ?>" alt="Jump Skiier flying in the sky" width="200" height="200" />
+				<p>The skier goes over a five to six feet fiberglass ramp. The boat’s top speed is 45mph.</p>
 			</a>
 		</li>
 		<li class="overall">
 			<a href="<?= base_url('index.php/Views/wip') ?>">
 				<h2>Overall 3-Event</h2>
-				<img src="<?= base_url('inc/img/overall_landing.png') ?>" alt="Overall Winners" width="200" height="200" />
-				<p>Adds slalom, trick, and jump scores together and determine the overall winner</p>
+				<img src="<?= base_url('inc/img/landing/overall_002.jpg') ?>" alt="Overall Winners" width="200" height="200" />
+				<p>Slalom, trick, and jump scores are added together to determine the overall winner.</p>
 			</a>
 		</li>
 	</ul><!--[END]#siteInfo-->
 
-<span class="clearBoth"><a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Google + 3-Event Community</a></span>
+<span class="clearBoth"><a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Google Plus 3-Event Community</a></span>
 
 <!-- [End] of file views/landing_view.php -->
 <!-- Location: .../application/views/landing_views.php -->
