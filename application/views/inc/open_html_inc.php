@@ -7,8 +7,14 @@
 		<meta charset="utf-8">
 <!-- ASK about this in .htacess -->
 <!--	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
-		<title></title>
-		<meta name="description" content="">
+		<title>Slalom Ski Story</title>
+		<meta property="og:title" content="Slalom Ski Story One"/>
+		<meta property="og:type" content="blog"/>
+		<!-- <meta property="og:url" content="www.McCoyWebDeveloper.com/index.php/Views/"/> -->
+		<meta property="og:image" content="http://www.mccoywebdeveloper.com/inc/img/slalom_landing_full.png"/>
+		<meta property="og:site_name" content="3-Event Water Ski Blog"/>
+<!-- 		<meta property="fb:admins" content="USER_ID"/>  -->
+ 		<meta property="og:description" content="Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36mph."/>
 		<meta name="viewport" content="width=device-width">
 
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -36,7 +42,6 @@
 		<!-- TODO::  CSS N/A yet -->
 		
 		<!-- Each page CSS detection -->
-
 
 		<!-- Live CSS all css above in development into one css file -->
 	</head>
