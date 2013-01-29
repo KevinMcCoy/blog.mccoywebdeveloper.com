@@ -23,7 +23,7 @@
 				</div>
 			</div>
 			<img src="<?= base_url('inc/img/story/slalom_001.jpg')?>" width="700" height="560" alt="Skiier just before dusk" />
-			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+			<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36mph.</p>
 		</li>
 	</ul><!--[END]#slalomBlog-->
 </div>
