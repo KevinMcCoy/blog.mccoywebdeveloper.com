@@ -3,7 +3,7 @@
 <!-- <div id="nav_wrapper">
 	- ### Navigation Bar to the four Main Blog pages -
 	<ul id="nav">
-		<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>
+		<?php if($currentPage == 'slalomBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
 		<?php if($currentPage == 'trickMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickMain') ?>">Trick</a></li>
 		<?php if($currentPage == 'jumpMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpMain') ?>">Jump</a></li>
 		<?php if($currentPage == 'overallMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallMain') ?>">Overall</a></li>
@@ -12,7 +12,7 @@
 
 	<ul id="siteInfo">
 		<li class="slalom">
-			<a href="<?= base_url('index.php/Views/slalomMain') ?>">
+			<a href="<?= base_url('index.php/Views/slalomBlogs') ?>">
 				<h2>Slalom Ski</h2>
 				<img src="<?= base_url('inc/img/landing/slalom_001.jpg') ?>" alt="Slalom Skiier just before dusk" width="200" height="200" />
 				<p>The goal is to go around six buoys in a ski course. The boat’s top speed is 36mph.</p>

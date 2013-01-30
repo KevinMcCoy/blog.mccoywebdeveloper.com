@@ -18,7 +18,7 @@
 		**	I can use this with jQuery insted of using the url.
 		**  This way is more flexable  [END]-->
 	<div id="<?php if($currentPage == "landing") echo 'landing_page';
-					else if($currentPage == "slalomMain") echo 'slalom_page';
+					else if($currentPage == "slalomBlogs") echo 'slalom_page';
 					else if($currentPage == "trickMain") echo 'trick_page';
 					else if($currentPage == "jumpMain") echo 'jump_page';
 					else if($currentPage == "overallMain") echo 'overall_page';
@@ -42,7 +42,7 @@
 			<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
 				<!-- ### Navigation Bar to the four Main Blog pages -->
 					<ul id="nav">
-						<?php if($currentPage == 'slalomMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomMain') ?>">Slalom</a></li>
+						<?php if($currentPage == 'slalomBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
 						<?php if($currentPage == 'trickMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickMain') ?>">Trick</a></li>
 						<?php if($currentPage == 'jumpMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpMain') ?>">Jump</a></li>
 						<?php if($currentPage == 'overallMain') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallMain') ?>">Overall</a></li>
