@@ -14,11 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url'] = 'http://127.0.0.1/mccoywebdeveloper/';
+$config['base_url'] = 'http://127.0.0.1/';
 
 switch (ENVIRONMENT) {
 	case 'local': $config['base_url'] = 'http://127.0.0.1/mccoywebdeveloper/'; break;
-	case 'serverTesting': $config['base_url'] = 'http://www.mccoywebdeveloper.com/'; break;
+	case 'serverTesting': $config['base_url'] = 'http://www.mccoydeveloper.com/'; break;
 	case 'devlive':	$config['base_url'] = ''; break;
 	case 'live': $config['base_url'] = ''; break;
 };
