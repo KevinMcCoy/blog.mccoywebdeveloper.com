@@ -50,7 +50,11 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'wingkit';
+
+$db['default']['password'] = 'root';
+$db['local']['password'] = 'root';
+$db['serverTesting']['password'] = 'wingkit';
+
 $db['default']['database'] = 'skiblog';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
