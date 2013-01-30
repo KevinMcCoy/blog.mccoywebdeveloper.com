@@ -42,11 +42,15 @@
 			<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
 				<!-- ### Navigation Bar to the four Main Blog pages -->
 					<ul id="nav">
-						<?php if($currentPage == 'slalomBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
-						<?php if($currentPage == 'trickBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
-						<?php if($currentPage == 'jumpBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>
-						<?php if($currentPage == 'overallBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
+						<li><?php if($currentPage == 'slalomBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
+						<li><?php if($currentPage == 'trickBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
+						<li><?php if($currentPage == 'jumpBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>
+						<li><?php if($currentPage == 'overallBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
 					</ul>
 			</div><!-- [END] #nav_wrapper -->
+			
+			<p><a class="continueReadingStory" href="<?= base_url('index.php/Views/slalomStory') ?>">Learn about <?= $currentPage ?></a><p>
+			<p>Hello I am going to tell you what this page is aboug so you don't leave right way.  Click on an image you fool!</p>
+
 		</div><!-- [END] #header-public -->
 <!-- [END] views/inc/navigation_public_inc.php -->
