@@ -77,7 +77,7 @@ p, a{
 p{
 	color: rgba(58, 58, 58, 1);
 }
-a.blog p{
+p a.continueReadingStory{
 	color: rgba(58, 58, 58, .7);
 	font-size: .9em;
 	text-align: right;
@@ -91,7 +91,7 @@ ul#nav li a{
 	font-weight: 600;
 }
 /* Font - HoverOver ========== */
-a h3:hover, a.blog p:hover{
+a h3:hover, a.continueReadingStory p:hover{
 	color: rgba(58, 58, 58, 1);
 	text-decoration: underline;
 }
@@ -226,7 +226,7 @@ div#header{
 	position: relative;
 }
 div#nav_wrapper{
-	height: 8em;
+	height: 6em;
 	top: 50%;
 	width: 100%;
 	margin-top: -5em
@@ -386,6 +386,16 @@ div.googleplus{
 	right: -27px;
 }
 
+
+ul#story div.social.wide{
+	overflow: visible;
+}
+ul#story div.social.wide h4{
+	width: 100%;
+	float: left;
+}
+
+
 /*##########################################################################*/
 /*##### Full Story CSS #####################################################*/
 /*##########################################################################*/
@@ -393,6 +403,24 @@ ul#story{
 	width: 700px;
 }
 /*======================= [END] Full Story Page ========*/
+
+
+/*##########################################################################*/
+/*##### About 3-Event ######################################################*/
+/*##########################################################################*/
+ul#about3Event li{
+	clear: both;
+}
+ul#about3Event img{
+	float: left;
+	margin: 0px 12px 12px 0px;
+}
+ul#about3Event h3, ul#about3Event p{
+	margin-left: 12px;
+}
+
+
+/*======================= [END] About 3-Event ========*/
 
 
 /*======================= [END] Main.css ========*/
