@@ -1,14 +1,5 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
-<!-- <div id="nav_wrapper">
-	- ### Navigation Bar to the four Main Blog pages -
-	<ul id="nav">
-		<?php if($currentPage == 'slalomBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
-		<?php if($currentPage == 'trickBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
-		<?php if($currentPage == 'jumpBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>
-		<?php if($currentPage == 'overallBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
-	</ul>
-</div> -->
 
 	<ul id="siteInfo">
 		<li class="slalom">
