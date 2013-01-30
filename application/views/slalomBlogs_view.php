@@ -11,7 +11,7 @@
 		<!-- itemscope itemtype is for google + button to grab the data using jQuery - Validation error says: Line 106, Column 55: Bad value www.McCoyWebDeveloper.com/ for attribute itemtype on element li: Not an absolute IRI. -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
-				<img itemprop="image" src="<?= base_url('inc/img/slalom_landing.png') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
+				<img itemprop="image" src="<?= base_url('inc/img/landing/slalom_003.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3 itemprop="name">Slalom Ski Title One</h3>
 			</a>
 			<div class="social">
@@ -42,7 +42,7 @@
 		<!-- <li><hr class="style_two" /></li> -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
-				<img src="<?= base_url('inc/img/slalom_landing.png') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
+				<img src="<?= base_url('inc/img/landing/slalom_002.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3>Do you know how to ski?</h3>
 			</a>
 			<h4>John Parks 01/02/2013</h4>
