@@ -43,6 +43,9 @@
 			break;
 		
 			case 'serverTesting':
+				error_reporting(0);
+			break;
+			
 			case 'production':
 				error_reporting(0);
 			break;
