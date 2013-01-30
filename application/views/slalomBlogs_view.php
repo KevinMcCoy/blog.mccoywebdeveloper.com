@@ -27,7 +27,7 @@
  				</div>
 			</div>
 			<p itemprop="description">Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
-			<a class="blog" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
+			<a class="continueReadingStory" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
 		</li>
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
@@ -47,7 +47,7 @@
  				</div>
 			</div>
 			<p>I like to slalom ski. It is fun to slalom ski. Once I cross the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
-			<a class="blog" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
+			<a class="continueReadingStory" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
 		</li>
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
@@ -67,7 +67,7 @@
  				</div>
 			</div>
 			<p>Yeeeeehawwwwwww. It is fun to jump on a slalom ski. Once I cross the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
-			<a class="blog" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
+			<a class="continueReadingStory" href="<?= base_url('index.php/Views/slalomStory') ?>"><p>Continue reading story...</p></a>
 		</li>
 	</ul><!--[END]#slalomBlog-->
 </div>
