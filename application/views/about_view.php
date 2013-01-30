@@ -4,7 +4,7 @@
 <!-- Details about Info listed from the four li above -->
 <ul id="about">
 	<li id="detail_invoice" onclick="#siteInfo">
-		<img src="<?= base_url('inc/img/slalom_landing.png') ?>" alt="Slalom Skiier just before dusk" />
+		<img src="<?= base_url('inc/img/about/slalom_001.jpg') ?>" alt="Slalom Skiier just before dusk" />
 		<h3>Slalom</h3>
 		<p>Slalom skiing is on only one ski with two footplates.  Once the skier can ski crossing the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36mph.</p>
 		<a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Check out the Slalom blog</a>	
