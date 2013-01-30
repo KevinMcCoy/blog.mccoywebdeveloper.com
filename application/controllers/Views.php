@@ -48,19 +48,19 @@ class Views extends CI_Controller {
 		$this->theEnd();
 	}
 
-	public function trickMain(){
+	public function trickBlogs(){
 		$this->wip();
 	}
 
-	public function jumpMain(){
+	public function jumpBlogs(){
 		$this->wip();
 	}
 
-	public function overallMain(){
+	public function overallBlogs(){
 		$this->wip();
 	}
 
-	public function about(){
+	public function about3Event(){
 		$data['currentPage'] = 'slalomMain';
 		$this->load->view('about_view');
 		$this->theEnd();
