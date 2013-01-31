@@ -18,6 +18,10 @@ li{
 	overflow: visible;
 }
 div.clear{clear:both;}
+span.right{
+	float: right;
+	margin-top: 4px;
+}
 
 /* ##### Font Setup #############################################*/
 /* Company's Logo */
@@ -53,8 +57,8 @@ h3{
 h4{
 	display: table-cell;
 	width: 150px;
-	margin: 0px 8px 0px 0px;
-	padding: 0px 30px 0px 0px;
+	margin: 0px;
+	padding: 0px;
 	vertical-align: middle;
 	color: rgba(58, 58, 58, .75);
 	font-size: .7em;
@@ -208,8 +212,9 @@ body{
 }
 div.left{
 	float: left;
-	width: 785px;
+	width: 730px;
 	overflow: visible;
+	padding-right: 25px;
 }
 div.right{
 	float: left;
@@ -397,7 +402,7 @@ ul#siteInfo li:hover{
 
 
 /*###################################################################################*/
-/*##### Blogs Page - In short detail of each blog to click on ###################################################*/
+/*##### Short - Blogs Page - In short detail of each blog to click on ###################################################*/
 /*###################################################################################*/
 ul.blogsShort{
 	margin: 0px auto;
@@ -405,13 +410,14 @@ ul.blogsShort{
 	overflow: visible;
 }
 ul.blogsShort li{
-	width: 500px;
-	margin: 15px 0 18px;
-	width: inherit;
-	overflow: hidden;
 	clear: both;
 	float: left;
+	width: 746px;
+	margin: 15px 0 18px;
 	overflow: visible;
+}
+ul.blogShort li p{
+	width: 100%;
 }
 ul.blogsShort img{
 	float: left;
@@ -443,15 +449,20 @@ div.googleplus{
 /*##### Full Story CSS #####################################################*/
 /*##########################################################################*/
 ul#story{
-	margin: 0px 20px 0px 0px;
+	margin: 0px;
 }
 ul#story li img{
+	width: 100%;
 	margin: 8px 0px 2px;
 }
 div.social.wide{
 	display: block;
 	overflow: visible;
 }
+ul#story li h3{
+	float: left;
+}
+
 ul#story div.social.wide h4{
 	width: 100%;
 	float: left;
