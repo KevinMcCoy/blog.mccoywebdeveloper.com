@@ -309,10 +309,14 @@ div#shortIntro{
 	width: 100%;
 	position: relative;
 }
+
+/* Four line of text - The introduction of the website */
 div#shortIntro p{
-	width: 50%;
+	width: 52%;
 	display: inline-block;
 }
+
+/* Big Quotes wrap the above introduction */
 span.quotes{
 	font-size: 3em;
 	font-weight: 600;
@@ -328,21 +332,23 @@ span.quotes.right{
 	float: right;
 	position: relative;
 	top: 7px;
-	left: -12px;
+	left: -2px;
 }
 
+/* A href to the About page */
 a.learnAboutThreeEvent{
 	display: inline-block;
 
 	/* Right alingment for the url link */
 	position: absolute;
-	right: 16px;
-	bottom: 16px;
+	right: 60px;
+	bottom: 68px;
 
-	/* Not using th center alingment for the url */
+/* Not using th center alingment for the url */
 /*	width: 37%;
 	margin: 0 auto;
 	text-align: center;*/
+	
 }
 /* =================================================== [END] Short Intro ===============*/
 
