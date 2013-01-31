@@ -37,7 +37,6 @@
 			<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
 			<!-- ### Navigation Bar to the four Main Blog pages -->
 				<ul id="nav">
-					<?= $currentPageID ?>
 					<li><?php if($currentPageID == 'slalom_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
 					<li><?php if($currentPageID == 'trick_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
 					<li><?php if($currentPageID == 'jump_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>

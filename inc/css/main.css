@@ -306,11 +306,24 @@ hr.style_two{
 /* ##### Short Intro ################################################### */
 div#shortIntro{
 	clear:both;
-	width: 540px;
+	width: 100%;
+	position: relative;
 }
+div#shortIntro p{
+	width: 59%;
+	display: inline-block;
+}
+/* CHECK:: */
 a.learnAboutThreeEvent{
-	float: right;
-	margin: 12px 0px 0px;
+	display: inline-block;
+
+	position: absolute;
+	right: 16px;
+	bottom: 16px;
+
+/*	width: 36%;
+	margin: 0 auto;
+	text-align: center;*/
 }
 /* =================================================== [END] Short Intro ===============*/
 
