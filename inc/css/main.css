@@ -77,21 +77,21 @@ p, a{
 p{
 	color: rgba(58, 58, 58, 1);
 }
-p a.continueReadingStory{
+a{
 	color: rgba(58, 58, 58, .7);
 	font-size: .9em;
 	text-align: right;
-	margin: 0px 20px;
 	text-decoration: underline;
 }
 
-/* font - Navigation */
+/* ## Font - Navigation */
 ul#nav li a{
 	color: rgba(58, 58, 58, 0.72);
 	font-weight: 600;
 }
-/* Font - HoverOver ========== */
-a h3:hover, a.continueReadingStory p:hover{
+
+/* ## Font - HoverOver ========== */
+a:hover{
 	color: rgba(58, 58, 58, 1);
 	text-decoration: underline;
 }
@@ -226,7 +226,6 @@ div#header{
 	position: relative;
 }
 div#nav_wrapper{
-	height: 6em;
 	top: 50%;
 	width: 100%;
 	margin-top: -5em
@@ -242,7 +241,6 @@ h1.logo a{
 	text-align: left;
 	text-decoration: none;
 }
-/* ===========================================[END] Header =========== */
 
 
 /* ##### Navgation ################################################### */
@@ -305,6 +303,19 @@ hr.style_two{
 }
 /* =================================================== [END] Navgation ===============*/
 
+/* ##### Short Intro ################################################### */
+div#shortIntro{
+	clear:both;
+	width: 540px;
+}
+a.learnAboutThreeEvent{
+	float: right;
+	margin: 12px 0px 0px;
+}
+/* =================================================== [END] Short Intro ===============*/
+
+/*##########################################################################*/
+/* ===========================================[END] Header =========== */
 
 
 /*##########################################################################*/
@@ -344,9 +355,11 @@ ul#siteInfo li:hover{
 	-o-transform: scale(1.1,1.1);
 	transform: scale(1.1,1.1);
 }
+/*======================= [END] Landing Page CSS ========*/
+
 
 /*###################################################################################*/
-/*##### Each blog in short detail ###################################################*/
+/*##### Blogs Page - In short detail of each blog to click on ###################################################*/
 /*###################################################################################*/
 ul.blogsShort{
 	margin: 0px auto;
@@ -385,22 +398,25 @@ div.googleplus{
 	position: relative;
 	right: -27px;
 }
-
-
-ul#story div.social.wide{
-	overflow: visible;
-}
-ul#story div.social.wide h4{
-	width: 100%;
-	float: left;
-}
+/*======================= [END] Blogs Page - In short detail of each blog to click on ========*/
 
 
 /*##########################################################################*/
 /*##### Full Story CSS #####################################################*/
 /*##########################################################################*/
 ul#story{
-	width: 700px;
+	margin: 0px 20px 0px 0px;
+}
+ul#story li img{
+	margin: 8px 0px 2px;
+}
+div.social.wide{
+	display: block;
+	overflow: visible;
+}
+ul#story div.social.wide h4{
+	width: 100%;
+	float: left;
 }
 /*======================= [END] Full Story Page ========*/
 
@@ -418,8 +434,6 @@ ul#about3Event img{
 ul#about3Event h3, ul#about3Event p{
 	margin-left: 12px;
 }
-
-
 /*======================= [END] About 3-Event ========*/
 
 
