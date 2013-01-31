@@ -20,6 +20,10 @@ class Views extends CI_Controller {
 	private $data;
 
 	public function __construct() {
+		/* Temporay Testing NuLLy */
+		$this->data['dbWriter'][0] = 'NuLLy';
+		$this->data['dbWriterDate'][0] = 'NuLLy';
+
 		/* ## Get URI and store it in the data ## */
 		$rURI=$_SERVER['REQUEST_URI'];
 		$this->data['currentPage'] = substr($rURI, strrpos($rURI, '/') + 1);
@@ -40,76 +44,117 @@ class Views extends CI_Controller {
 		$this->load->view('inc/open_html_inc', $this->data);
 		$this->load->view('inc/navigation_public_inc', $this->data);
     }
+
+/* ####	PRE parent::__construct();  #### */
     public function landingSetup(){
-		$this->data['currentPageID'] = 'landing_page';
+		$this->data['currentPageID'] = 'landing_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Three Event Waterskiing';
+		$this->data['current']= 'landing';
+
     }
     public function aboutSetup(){
-		$this->data['currentPageID'] = 'aboutThreeEvent_page';
+		$this->data['currentPageID'] = 'aboutThreeEvent_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'About Three Event Waterskiing';
+		$this->data['current']= 'about';
     }
 	public function slalomSetup(){
-		$this->data['currentPageID'] = 'slalom_page';
+		$this->data['currentPageID'] = 'slalom_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Slalom Ski';
+		$this->data['current']= 'slalom';
 	}
 	public function trickSetup() {
-		$this->data['currentPageID'] = 'trick_page';
+		$this->data['currentPageID'] = 'trick_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Trick Ski';
+		$this->data['current']= 'trick';
 	}
 	public function jumpSetup() {
-		$this->data['currentPageID'] = 'jump_page';
+		$this->data['currentPageID'] = 'jump_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Jump Ski';
+		$this->data['current']= 'jump';
 	}
 	public function overallSetup() {
-		$this->data['currentPageID'] = 'overall_page';
+		$this->data['currentPageID'] = 'overall_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Overall Winning';
+		$this->data['current']= 'overall';
 	}
 	public function errorSetup(){
-		$this->data['currentPageID'] = 'unknown_page';
+		$this->data['currentPageID'] = 'unknown_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'unknown error controller/Views.php line 34::';
+		$this->data['current']= 'unknown';
 	}
+/* ####	[END] - PRE parent::__construct();  #### */
 
+
+/* ####	POST parent::__construct();  #### */
 	public function index() {
     	//TODO:: Make 404 for robots
 		$this->landing();
     }
 
+    /* Home Page is the landing */
 	public function landing(){
 		//REPEAT:: $data need to be carried to here from line 22;
-		$this->load->view('landing_view');
+		$this->load->view('landing_view', $this->data);
 		$this->theEnd();
 	}
 
+
 	public function slalomBlogs(){
-		$this->load->view('slalomBlogs_view');
+		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function slalomStory(){
-		$this->load->view('slalomStory_view');
+		$this->load->view('story_view', $this->data);
 		$this->theEnd();
 	}
 
+
 	public function trickBlogs(){
-		$this->wip();
+		$this->data['dbBlogTitle'][0] = 'trick ski title';
+		$this->data['dbWriterStoryShort'][0] = 'The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
+		$this->data['dbBlogWriter'][0] = 'Kevin McCoy';
+		$this->data['dbBlogWriterDate'][0] = '01/12/2014';
+		$this->load->view('blogs_view', $this->data);
+		$this->theEnd();
 	}
+	public function trickStory(){
+		$this->load->view('story_view', $this->data);
+		$this->theEnd();
+	}
+
 
 	public function jumpBlogs(){
-		$this->wip();
+		$this->load->view('Blogs_view');
+		$this->theEnd();
+	}
+	public function jumpStory(){
+		$this->load->view('Story_view');
+		$this->theEnd();
 	}
 
+
 	public function overallBlogs(){
-		$this->wip();
+		$this->load->view('Blogs_view');
+		$this->theEnd();
 	}
+	public function overallStory(){
+		$this->load->view('Story_view');
+		$this->theEnd();
+	}
+
 
 	public function about3Event(){
 		$this->load->view('about_view');
 		$this->theEnd();
 	}
+
+	/* WORK IN PROGRESS (WIP) */
 	public function wip(){
 		$this->load->view('wip.html');
 		$this->theEnd();
 	}
 
+	/* Load the footer at the end of the page */
 	public function theEnd(){
 		$this->load->view('inc/footer_inc');
 		// $this->load->view('inc/feedback_inc');
@@ -118,5 +163,6 @@ class Views extends CI_Controller {
 
 }
 
+/* ####	[END] - POST parent::__construct();  #### */
 /* End of file Views.php */
 /* Location: ./application/controllers/Views.php */

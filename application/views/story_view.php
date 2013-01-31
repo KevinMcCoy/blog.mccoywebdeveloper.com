@@ -1,5 +1,6 @@
-<!-- Created on Jan 21, 2013 by Kevin McCoy -->
 <!-- [Start] views/slalomStory_view.php -->
+<!-- Jan 21, 2013 Created on by Kevin McCoy -->
+<!-- Jan 30, 2013 Rename for sever side -->
 
 <!-- Hidden This is were you can add a center in another development stage IDEA:: -->
 <div id="center" style="display:none; visibility:hidden;">
@@ -10,7 +11,8 @@
 	<ul id="story">
 		<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
-			<h3>Slalom Ski</h3>
+			<h3>TITLE</h3>
+			<a href="<?= base_url('index.php/Views/'.$current.'Blogs') ?>">Back to <?= $current ?> Blogs list</a>
 			<div class="social wide">
 				<h4 class="tempTest">Kevin McCoy 01/02/2013</h4>
 				<!-- Facebook like button -->

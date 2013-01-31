@@ -1,21 +1,27 @@
-<!-- Created on Jan 15, 2013 by Kevin McCoy -->
+
 <!-- [Start] views/landing_view.php -->
+<!-- Jan 15, 2013 Created on by Kevin McCoy -->
+<!-- Jan 30, 2013 Rename for sever side -->
+
 
 <!-- Hidden This is were you can add a center in another development stage IDEA:: -->
 <div id="center" style="display:none; visibility:hidden;">
-	<h3>Slalom</h3>
+	<!-- <h3> h3title for SEO </h3> -->
 </div>
 
 	<div class='left'>
 	<ul class="blogsShort">
 		<!-- itemscope itemtype is for google + button to grab the data using jQuery - Validation error says: Line 106, Column 55: Bad value www.McCoyWebDeveloper.com/ for attribute itemtype on element li: Not an absolute IRI. -->
+		<!-- Data base load first for this list to load -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
-			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
+
+			<!-- TODO:: Add current story number after story name ... -->
+			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
 				<img itemprop="image" src="<?= base_url('inc/img/landing/slalom_003.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
-				<h3 itemprop="name">Slalom Ski Title One</h3>
+				<h3 itemprop="name"><?= $dbBlogTitle[0] ?></h3>
 			</a>
 			<div class="social">
-				<h4>Kevin McCoy 01/02/2013</h4>
+				<h4><?= $dbBlogWriter[0].' '.$dbBlogWriterDate[0] ?></h4>
 				<!-- Facebook like button -->
 				<div class="facebook">
 					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
