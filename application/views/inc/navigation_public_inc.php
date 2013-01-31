@@ -33,9 +33,9 @@
 
 			<!-- Logo and Navigation is contained in this div -->
 			<div id="nav_wrapper">
-			<!-- ### LOGO/Title of site/ Escape hatch ## -->
-			<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
-			<!-- ### Navigation Bar to the four Main Blog pages -->
+				<!-- ### LOGO/Title of site/ Escape hatch ## -->
+				<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
+				<!-- ### Navigation Bar to the four Main Blog pages -->
 				<ul id="nav">
 					<li><?php if($currentPageID == 'slalom_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
 					<li><?php if($currentPageID == 'trick_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
@@ -47,8 +47,8 @@
 				<p><span class="quotes left">"</span>Hello and welcome to the water ski community web site. Here you will find interesting topic base on Three Event Water Skiing.  If you never heard of this sport, you can read what Three Event Water Skiing is all about.<span class="quotes right">"</span></p>
 				<!-- a href - Learn about 3-Event -->
 				<a class="learnAboutThreeEvent" href="<?= base_url('index.php/Views/about3Event') ?>">Learn about <?= $currentTitle ?></a>
-			</p>
+			</div><!-- [END] #shortIntro -->
 
-		</div><!-- [END] #header-public -->
+		</div><!-- [END] #header .public -->
 		<div class="clear"></div>
 <!-- [END] views/inc/navigation_public_inc.php -->
