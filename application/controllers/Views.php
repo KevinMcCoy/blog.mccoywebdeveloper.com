@@ -20,13 +20,54 @@ class Views extends CI_Controller {
 	private $data;
 
 	public function __construct() {
+		/* ## Get URI and store it in the data ## */
 		$rURI=$_SERVER['REQUEST_URI'];
 		$this->data['currentPage'] = substr($rURI, strrpos($rURI, '/') + 1);
-		$rURI=null;
+		$rURI = NULL;
+
+		/* ## Set the class name and Title to display in html ## */
+		/* ## This is using the last uri name ## */
+		if($this->data['currentPage'] == "landing" || $this->data['currentPage'] == "Views" || $this->data['currentPage'] == "index.php") $this->landingSetup();
+		else if($this->data['currentPage'] == "about3Event") $this->aboutSetup();
+		else if($this->data['currentPage'] == "slalomBlogs" || $this->data['currentPage'] == "slalomStory") $this->slalomSetup();
+		else if($this->data['currentPage'] == "trickBlogs" || $this->data['currentPage'] == "trickStory") $this->trickSetup();
+		else if($this->data['currentPage'] == "jumpBlogs" || $this->data['currentPage'] == "jumpStory") $this->jumpSetup();
+		else if($this->data['currentPage'] == "overallBlogs" || $this->data['currentPage'] == "overallStory") $this->overallSetup();
+		else $this->errorSetup();
+
+		// var_dump(this->data['currentPageClass']);
 		parent::__construct();
 		$this->load->view('inc/open_html_inc', $this->data);
 		$this->load->view('inc/navigation_public_inc', $this->data);
     }
+    public function landingSetup(){
+		$this->data['currentPageID'] = 'landing_page';
+		$this->data['currentTitle'] = 'Three Event Waterskiing';
+    }
+    public function aboutSetup(){
+		$this->data['currentPageID'] = 'aboutThreeEvent_page';
+		$this->data['currentTitle'] = 'About Three Event Waterskiing';
+    }
+	public function slalomSetup(){
+		$this->data['currentPageID'] = 'slalom_page';
+		$this->data['currentTitle'] = 'Slalom Ski';
+	}
+	public function trickSetup() {
+		$this->data['currentPageID'] = 'trick_page';
+		$this->data['currentTitle'] = 'Trick Ski';
+	}
+	public function jumpSetup() {
+		$this->data['currentPageID'] = 'jump_page';
+		$this->data['currentTitle'] = 'Jump Ski';
+	}
+	public function overallSetup() {
+		$this->data['currentPageID'] = 'overall_page';
+		$this->data['currentTitle'] = 'Overall Winning';
+	}
+	public function errorSetup(){
+		$this->data['currentPageID'] = 'unknown_page';
+		$this->data['currentTitle'] = 'unknown error controller/Views.php line 34::';
+	}
 
 	public function index() {
     	//TODO:: Make 404 for robots
@@ -61,12 +102,10 @@ class Views extends CI_Controller {
 	}
 
 	public function about3Event(){
-		$data['currentPage'] = 'slalomMain';
 		$this->load->view('about_view');
 		$this->theEnd();
 	}
 	public function wip(){
-		$data['currentPage'] = 'wip';
 		$this->load->view('wip.html');
 		$this->theEnd();
 	}
