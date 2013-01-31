@@ -310,18 +310,37 @@ div#shortIntro{
 	position: relative;
 }
 div#shortIntro p{
-	width: 59%;
+	width: 50%;
 	display: inline-block;
 }
-/* CHECK:: */
+span.quotes{
+	font-size: 3em;
+	font-weight: 600;
+}
+span.quotes.left{
+	float: left;
+	height: 126px;
+	position: relative;
+	top: -15px;
+	margin-right: 12px;
+}
+span.quotes.right{
+	float: right;
+	position: relative;
+	top: 7px;
+	left: -12px;
+}
+
 a.learnAboutThreeEvent{
 	display: inline-block;
 
+	/* Right alingment for the url link */
 	position: absolute;
 	right: 16px;
 	bottom: 16px;
 
-/*	width: 36%;
+	/* Not using th center alingment for the url */
+/*	width: 37%;
 	margin: 0 auto;
 	text-align: center;*/
 }

@@ -42,10 +42,10 @@
 					<li><?php if($currentPageID == 'jump_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>
 					<li><?php if($currentPageID == 'overall_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
 				</ul>
-				<!-- Learn about 3-Event -->
 			</div><!-- [END] #nav_wrapper -->
 			<div id="shortIntro">
-				<p>Hello I am going to tell you what this page is aboug so you don't leave right way.  Click on an image you fool!</p>
+				<p><span class="quotes left">"</span>Hello and welcome to the water ski community web site. Here you will find interesting topic base on Three Event Water Skiing.  If you never heard of this sport, you can read what Three Event Water Skiing is all about.<span class="quotes right">"</span></p>
+				<!-- a href - Learn about 3-Event -->
 				<a class="learnAboutThreeEvent" href="<?= base_url('index.php/Views/about3Event') ?>">Learn about <?= $currentTitle ?></a>
 			</p>
 
