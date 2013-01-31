@@ -20,10 +20,6 @@ class Views extends CI_Controller {
 	private $data;
 
 	public function __construct() {
-		/* Temporay Testing NuLLy */
-		$this->data['dbWriter'][0] = 'NuLLy';
-		$this->data['dbWriterDate'][0] = 'NuLLy';
-
 		/* ## Get URI and store it in the data ## */
 		$rURI=$_SERVER['REQUEST_URI'];
 		$this->data['currentPage'] = substr($rURI, strrpos($rURI, '/') + 1);
@@ -31,18 +27,35 @@ class Views extends CI_Controller {
 
 		/* ## Set the class name and Title to display in html ## */
 		/* ## This is using the last uri name ## */
-		if($this->data['currentPage'] == "landing" || $this->data['currentPage'] == "Views" || $this->data['currentPage'] == "index.php") $this->landingSetup();
-		else if($this->data['currentPage'] == "about3Event") $this->aboutSetup();
-		else if($this->data['currentPage'] == "slalomBlogs" || $this->data['currentPage'] == "slalomStory") $this->slalomSetup();
-		else if($this->data['currentPage'] == "trickBlogs" || $this->data['currentPage'] == "trickStory") $this->trickSetup();
-		else if($this->data['currentPage'] == "jumpBlogs" || $this->data['currentPage'] == "jumpStory") $this->jumpSetup();
-		else if($this->data['currentPage'] == "overallBlogs" || $this->data['currentPage'] == "overallStory") $this->overallSetup();
+
+		$crPapge = NULL;
+		$crPage = $this->data['currentPage'];
+		if(!$crPage || $crPage == "landing" || $crPage == "Views" || $crPage == "index.php") $this->landingSetup();
+		else if($crPage == "slalomBlogs" 	|| $crPage == "slalomStory") $this->slalomSetup();
+		else if($crPage == "trickBlogs" 	|| $crPage == "trickStory") $this->trickSetup();
+		else if($crPage == "jumpBlogs" 		|| $crPage == "jumpStory") $this->jumpSetup();
+		else if($crPage == "overallBlogs" 	|| $crPage == "overallStory") $this->overallSetup();
+		else if($crPage == "about3Event") $this->aboutSetup();
 		else $this->errorSetup();
+		$currentPage = NULL;
 
 		// var_dump(this->data['currentPageClass']);
 		parent::__construct();
 		$this->load->view('inc/open_html_inc', $this->data);
 		$this->load->view('inc/navigation_public_inc', $this->data);
+ 
+ 		/* TEMPORY SetUp Blank to clear any errors Testing NuLLy */
+		$this->data['dbWriter'][0] = 'NuLLy dbWriter';
+		$this->data['dbWriterDate'][0] = 'NuLLy dbWriterDate';
+		$this->data['dbBlogTitle'][0] = 'NuLLy dbBlogTitle';
+		$this->data['dbStoryShort'][0] = 'NuLLy dbStoryShort';
+		$this->data['dbStoryLong'][0] = 'NuLLy dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
+
+		$this->data['dbWriter'][1] = 'NuLLy dbWriter';
+		$this->data['dbWriterDate'][1] = 'NuLLy dbWriterDate';
+		$this->data['dbBlogTitle'][1] = 'NuLLy dbBlogTitle';
+		$this->data['dbStoryShort'][1] = 'NuLLy dbStoryShort';
+		$this->data['dbStoryLong'][1] = 'NuLLy dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
     }
 
 /* ####	PRE parent::__construct();  #### */
@@ -100,6 +113,11 @@ class Views extends CI_Controller {
 
 
 	public function slalomBlogs(){
+		$this->data['dbBlogTitle'][0] = 'Slalom ski title';
+		$this->data['dbStoryShort'][0] = 'The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
+		$this->data['dbWriter'][0] = 'Kevin McCoy';
+		$this->data['dbWriterDate'][0] = '01/12/2014';
+
 		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
@@ -111,9 +129,16 @@ class Views extends CI_Controller {
 
 	public function trickBlogs(){
 		$this->data['dbBlogTitle'][0] = 'trick ski title';
-		$this->data['dbWriterStoryShort'][0] = 'The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
-		$this->data['dbBlogWriter'][0] = 'Kevin McCoy';
-		$this->data['dbBlogWriterDate'][0] = '01/12/2014';
+		$this->data['dbStoryShort'][0] = 'The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
+		$this->data['dbWriter'][0] = 'Kevin McCoy';
+		$this->data['dbWriterDate'][0] = '01/12/2014';
+
+		$this->data['dbBlogTitle'][1] = 'Tile Number Two';
+		$this->data['dbStoryShort'][1] = 'The 2 short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
+		$this->data['dbWriter'][1] = 'Kevin Two';
+		$this->data['dbWriterDate'][1] = '01/12/2012';
+
+
 		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
@@ -124,27 +149,41 @@ class Views extends CI_Controller {
 
 
 	public function jumpBlogs(){
-		$this->load->view('Blogs_view');
+		$this->data['dbWriter'][0] = 'dbWriter';
+		$this->data['dbWriterDate'][0] = '1234';
+		$this->data['dbBlogTitle'] = 'dbBlogTitle';
+		$this->data['dbStoryShort'][0] = 'NuLLy dbStoryShort';
+		$this->data['dbStoryLong'][0] = 'NuLLy dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
+
+		$this->data['dbWriter'][1] = 'NuLLy dbWriter';
+		$this->data['dbWriterDate'][1] = 'NuLLy dbWriterDate';
+		$this->data['dbBlogTitle'][1] = 'NuLLy dbBlogTitle';
+		$this->data['dbStoryShort'][1] = 'NuLLy dbStoryShort';
+		$this->data['dbStoryLong'][1] = 'NuLLy dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
+
+
+
+		$this->load->view('Blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function jumpStory(){
-		$this->load->view('Story_view');
+		$this->load->view('Story_view', $this->data);
 		$this->theEnd();
 	}
 
 
 	public function overallBlogs(){
-		$this->load->view('Blogs_view');
+		$this->load->view('Blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function overallStory(){
-		$this->load->view('Story_view');
+		$this->load->view('Story_view', $this->data);
 		$this->theEnd();
 	}
 
 
 	public function about3Event(){
-		$this->load->view('about_view');
+		$this->load->view('about_view', $this->data);
 		$this->theEnd();
 	}
 
