@@ -17,12 +17,7 @@
 	<!--**  I am using this id to lable page 
 		**	I can use this with jQuery insted of using the url.
 		**  This way is more flexable  [END]-->
-	<div id="<?php if($currentPage == "landing") echo 'landing_page';
-					else if($currentPage == "slalomBlogs") echo 'slalom_page';
-					else if($currentPage == "trickBlogs") echo 'trick_page';
-					else if($currentPage == "jumpBlogs") echo 'jump_page';
-					else if($currentPage == "overallBlogs") echo 'overall_page';
-					else echo $currentPage . '_page'; ?>" class="wrapper clearfix">
+	<div id="<?php echo $currentPageID ?>" class="wrapper clearfix">
 
 		<div id="header" class="public">
 			<!-- ### Login -->
@@ -38,19 +33,23 @@
 
 			<!-- Logo and Navigation is contained in this div -->
 			<div id="nav_wrapper">
-			<!-- ### LOGO -->
+			<!-- ### LOGO/Title of site/ Escape hatch ## -->
 			<a href="<?= base_url('index.php/Views') ?>"><h1 class="logo">3-Event Water Ski Blogs</h1></a>
-				<!-- ### Navigation Bar to the four Main Blog pages -->
-					<ul id="nav">
-						<li><?php if($currentPage == 'slalomBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
-						<li><?php if($currentPage == 'trickBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
-						<li><?php if($currentPage == 'jumpBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>
-						<li><?php if($currentPage == 'overallBlogs') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
-					</ul>
+			<!-- ### Navigation Bar to the four Main Blog pages -->
+				<ul id="nav">
+					<?= $currentPageID ?>
+					<li><?php if($currentPageID == 'slalom_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/slalomBlogs') ?>">Slalom</a></li>
+					<li><?php if($currentPageID == 'trick_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/trickBlogs') ?>">Trick</a></li>
+					<li><?php if($currentPageID == 'jump_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/jumpBlogs') ?>">Jump</a></li>
+					<li><?php if($currentPageID == 'overall_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
+				</ul>
+				<!-- Learn about 3-Event -->
 			</div><!-- [END] #nav_wrapper -->
-			
-			<p><a class="continueReadingStory" href="<?= base_url('index.php/Views/slalomStory') ?>">Learn about <?= $currentPage ?></a><p>
-			<p>Hello I am going to tell you what this page is aboug so you don't leave right way.  Click on an image you fool!</p>
+			<div id="shortIntro">
+				<p>Hello I am going to tell you what this page is aboug so you don't leave right way.  Click on an image you fool!</p>
+				<a class="learnAboutThreeEvent" href="<?= base_url('index.php/Views/about3Event') ?>">Learn about <?= $currentTitle ?></a>
+			</p>
 
 		</div><!-- [END] #header-public -->
+		<div class="clear"></div>
 <!-- [END] views/inc/navigation_public_inc.php -->
