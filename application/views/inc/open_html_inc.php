@@ -29,19 +29,25 @@
 	 	-->
 
 		<!-- Venders CSS -->
-		<!-- TODO::  Change to load only two CSS per page -->
 		<link rel="stylesheet" href="<?= base_url('inc/css/vendors/normalize.css') ?>">
+		
+		<!-- Project CSS -->
 		<link rel="stylesheet" href="<?= base_url('inc/css/feedback.css') ?>">
 		<link rel="stylesheet" href="<?= base_url('inc/css/main.css') ?>">
 
-
+		<!-- Venders Script Tags-->
+		<!-- Modernizr -->
 		<script src="<?= base_url('inc/js/vendors/modernizr.custom.js') ?>"></script>
-		
-		<!-- Develpoment Stage CSS -->
-		<!-- Global CSS -->
-		<!-- TODO::  CSS N/A yet -->
-		
-		<!-- Each page CSS detection -->
+		<!-- Google Analytics -->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38145137-1']);
+		  _gaq.push(['_trackPageview']);
 
-		<!-- Live CSS all css above in development into one css file -->
-	</head>
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>	
+</head>
