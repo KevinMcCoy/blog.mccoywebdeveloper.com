@@ -1,6 +1,6 @@
 <!-- Created on Jan 15, 2013 by Kevin McCoy -->
 <!-- [Start] views/landing_view.php -->
-
+	<h3 class="center">Pick a category, start reading or posting blogs!</h3>
 	<ul id="siteInfo">
 		<li class="slalom">
 			<a href="<?= base_url('index.php/Views/slalomBlogs') ?>">

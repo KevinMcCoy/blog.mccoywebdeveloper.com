@@ -12,7 +12,7 @@
 		<!-- TODO::  Change class and ID names here as well in the the java script file soon to be added. -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 			<h3><?= $dbBlogTitle[0] ?></h3>
-			<span class="right"><a href="<?= base_url('index.php/Views/'.$current.'Blogs') ?>">Back to <?= $current ?> Blogs list</a></span>
+			<a class="text" href="<?= base_url('index.php/Views/'.$current.'Blogs') ?>">Back to <?= $current ?> Blogs list</a>
 			<div class="social wide">
 				<h4><?= $dbWriter[0].' '.$dbWriterDate[0] ?></h4>
 				<!-- Facebook like button -->

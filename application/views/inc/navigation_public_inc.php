@@ -43,18 +43,11 @@
 					<li><?php if($currentPageID == 'overall_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
 				</ul>
 			</div><!-- [END] #nav_wrapper -->
-			<div id="shortIntro">
-				<a href="<?= base_url('index.php/Views/about3Event') ?>">
-					<img src="<?= base_url('inc/img/landing/courseColor.jpg')?>" alt="Skiier just before dusk" />
-				</a>
-				
-				<!-- <blockquote> --><!-- <span class="quotes left">&ldquo;</span> -->
-				<h3>Welcome to the water ski community!</h3>
-				<h3>Read what others are talking about...</h3>
-				<p>Here you will find interesting reads in the four topic base on Three Event Water Skiing.  If you never heard of this sport, you can read here exactly about what Three Event Water Skiing is all about.</p><!-- <span class="quotes right">&rdquo;</span> --><!-- </blockquote> -->
-				<input type="button" name="aboutThreeEvent" onClick="<?= base_url('index.php/Views/about3Event') ?>" value="About 3 Event">
-				<!-- a href - Learn about 3-Event -->
-			</div><!-- [END] #shortIntro -->
+
+			<?php 	if($currentPageID == 'landing_page') $this->load->view('inc/intro_01_inc.php');
+					// elseif ($currentPageID == 'slalom_page' || $currentPageID == 'trick_page' || $currentPageID == 'jump_page' || $currentPageID == 'overall_page') $this->load->view('inc/intro_02_inc.php');
+			 ?>
+			
 
 		</div><!-- [END] #header .public -->
 		<div class="clear"></div>

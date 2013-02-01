@@ -23,7 +23,7 @@ h1{
 	font-family: 'Snippet', sans-serif;
 	font-size: 2.1em;
 	color: rgba(58, 58, 58, .8);
-	margin-top: 14px
+	margin: 14px 0px;
 }
 h1:hover{
 	font-family: 'Snippet', sans-serif;
@@ -45,6 +45,10 @@ h3{
 	color: rgba(58, 58, 58, .8);
 	font-size: 1.5em;
 	margin: 0px 0px 4px;
+}
+h3.center{
+	text-align: center;
+	margin: 56px 0px 32px;
 }
 
 /* Blog writer name and/or date */
@@ -209,7 +213,7 @@ body{
 
 /* Wrap entire page except for feedback */
 .wrapper{
-	margin: 14px auto;
+	margin: 14px auto 180px;
 	padding: 0px 32px;
 	width: 960px;
 	box-shadow: 0px 3px 6px #000;
@@ -278,7 +282,7 @@ ul#nav li{
 ul#nav li a{
 	text-decoration:none;
 	display: block;
-	padding:5px 21px;
+	padding:16px 21px;
 	float:left;
 	text-align:center;
 	border-top:8px solid transparent;
@@ -322,7 +326,7 @@ hr.style_two{
 
 /* ##### Short Intro ################################################### */
 div#shortIntro{
-	height: 240px;
+	height: 200px;
 	clear:both;
 	margin: 0 auto;
 	width: 88%;
@@ -339,6 +343,7 @@ div#shortIntro h3{
 	color: rgba(21, 85, 121, .8);
 }
 div#shortIntro input[type='button']{
+	font-size: 12px;
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
@@ -501,6 +506,11 @@ ul#story div.social.wide h4{
 	width: 100%;
 	float: left;
 }
+
+ul#story a.text{
+	float: right;
+}
+
 /*======================= [END] Full Story Page ========*/
 
 
