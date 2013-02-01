@@ -54,9 +54,8 @@ h3.center{
 /* Blog writer name and/or date */
 h4{
 	display: table-cell;
-	width: 150px;
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 0px 10px;
 	vertical-align: middle;
 	color: rgba(58, 58, 58, .75);
 	font-size: .7em;
@@ -454,6 +453,10 @@ ul.blogsShort img{
 	float: left;
 	margin-right: 25px;
 }
+ul.blogsShort li div.social h4{
+	width: 198px;
+}
+
 ul.blogShort li p{
 	width: 100%;
 }
@@ -462,25 +465,28 @@ ul.blogsShort li a.text{
 	margin: 4px 14px 0px 0px;
 }
 
-div.social{
+ul.blogsShort div.social{
 	overflow: visible;
 	display: table-cell;
 }
-div.social.wide h4{
-	width: 400px;
-}
-div.googleplus, div.facebook{
+ul.blogsShort div.googleplus, ul.blogsShort div.facebook{
 	display: table-cell;
 	vertical-align: top;
 }
-div.facebook{
+ul.blogsShort div.facebook{
 	text-align: right;
 	padding-top: 1px;
 }
-div.googleplus{
+ul.blogsShort div.googleplus{
 	position: relative;
 	right: -27px;
 }
+
+ul#story div.social{
+	clear: both;
+}
+
+
 /*======================= [END] Blogs Page - In short detail of each blog to click on ========*/
 
 
@@ -494,22 +500,27 @@ ul#story li img{
 	width: 100%;
 	margin: 8px 0px 2px;
 }
-div.social.wide{
-	display: block;
-	overflow: visible;
-}
+
 ul#story li h3{
 	float: left;
 }
 
-ul#story div.social.wide h4{
-	width: 100%;
-	float: left;
+ul#story div.facebook, ul#story div.googleplus{
+	margin: 4px 0px;
 }
-
+ul#story div.googleplus{
+	display: inline-block;
+}
 ul#story a.text{
 	float: right;
+	padding-top: 11px;
+	text-decoration: none;
 }
+ul#story a.text:hover{
+	float: right;
+	text-decoration: underline;
+}
+
 
 /*======================= [END] Full Story Page ========*/
 
