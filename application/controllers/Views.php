@@ -177,7 +177,7 @@ class Views extends CI_Controller {
 		$this->theEnd();
 	}
 	public function overallStory(){
-		$this->load->view('Story_view', $this->data);
+		$this->load->view('story_view', $this->data);
 		$this->theEnd();
 	}
 
