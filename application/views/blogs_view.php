@@ -22,9 +22,9 @@
 			<div class="social">
 				<h4><?= $dbWriter[0].' '.$dbWriterDate[0] ?></h4>
 				<!-- Facebook like button -->
-				<div class="facebook">
+				<!-- <div class="facebook">
 					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-				</div>
+				</div> -->
 				<!-- Google +1 button -->
 				<div class="googleplus">
 					<!-- <div class="g-plus" data-action="share"></div> -->
@@ -46,9 +46,9 @@
 			<div class="social">
 				<h4><?= $dbWriter[1].' '.$dbWriterDate[1] ?></h4>
 				<!-- Facebook like button -->
-				<div class="facebook">
+				<!-- <div class="facebook">
 					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-				</div>
+				</div> -->
 				<!-- Google +1 button -->
 				<div class="googleplus">
 					<!-- <div class="g-plus" data-action="share"></div> -->
@@ -68,9 +68,9 @@
 			<div class="social">
 				<h4>John Parks 01/02/2013</h4>
 				<!-- Facebook like button -->
-				<div class="facebook">
+				<!-- <div class="facebook">
 					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-				</div>
+				</div> -->
 				<!-- Google +1 button -->
 				<div class="googleplus">
 					<!-- <div class="g-plus" data-action="share"></div> -->
