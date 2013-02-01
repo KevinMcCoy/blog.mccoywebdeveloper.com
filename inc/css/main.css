@@ -1,6 +1,7 @@
 /*
 	Author: Kevin McCoy
-	Created: 01/19/2013
+	XCreated: 01/19/2013
+
 */
 /*===============================================================*/
 /*  Main Page CSS*/
@@ -50,7 +51,7 @@ h3{
 	text-align: left;
 	color: rgba(58, 58, 58, .8);
 	font-size: 1.5em;
-	margin: 0px;
+	margin: 0px 0px 4px;
 }
 
 /* Blog writer name and/or date */
@@ -69,6 +70,9 @@ h4{
 h4.tempTest{
 	width: 300px;
 }
+span{
+	font-size: 1.7em;
+}
 
 p, a{
 	text-decoration: none;
@@ -76,15 +80,14 @@ p, a{
 	text-align: left;
 	font-size: 1em;
 	letter-spacing: 1px;
-	margin: 12px 0px 8px;
 }
 p{
+	margin: 12px 0px 8px;
 	color: rgba(58, 58, 58, 1);
 }
 a{
 	color: rgba(58, 58, 58, .7);
 	font-size: .9em;
-	text-align: right;
 	text-decoration: underline;
 }
 
@@ -99,6 +102,7 @@ a:hover{
 	color: rgba(58, 58, 58, 1);
 	text-decoration: underline;
 }
+
 /* ===========================================[END] Font Style ===+++++++===*/
 
 
@@ -193,7 +197,7 @@ body{
 /* Wrap entire page except for feedback */
 .wrapper{
 	margin: 14px auto;
-	padding: 32px;
+	padding: 0px 32px;
 	width: 960px;
 	box-shadow: 0px 3px 6px #000;
 		-moz-box-shadow:0px 3px 6px #000;
@@ -202,11 +206,11 @@ body{
 /*	background: url("../bg/random_grey_variations.png")x
 	background: url("../bg/pp.jpg");
 	background: url("../bg/Natural-Paper-Palette/deepsea.jpg"); */
-	background: url("../bg/natural_paper/eggshell.jpg");
- 	opacity:.90; 
+	background: url("../bg/natural_paper/eggshell.png");
+/*	opacity:.90; 
 		-khtml-opacity:.8; 
 		-moz-opacity:.8;
-		-ms-filter:"alpha(opacity=80)";
+		-ms-filter:"alpha(opacity=80)";*/
   	 	/* Validation Service Error *//*filter:alpha(opacity=80);*/
   		/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
 }
@@ -227,13 +231,8 @@ div.right{
 /* ##### Header ##########################################################*/
 /* Top part of page, contains Navigation and Login */
 div#header{
-	margin-top: 4em;
-	position: relative;
 }
 div#nav_wrapper{
-	top: 50%;
-	width: 100%;
-	margin-top: -5em
 }
 ul#nav{
 	float: right;
@@ -311,49 +310,58 @@ hr.style_two{
 /* ##### Short Intro ################################################### */
 div#shortIntro{
 	clear:both;
-	width: 100%;
+	width: 80%;
 	position: relative;
+}
+div#shortIntro a{
+	float: left;
+	display: inline-block;
+	margin-right: 12px;
+}
+
+div#shortIntro h3{
+	color: rgba(21, 85, 121, .8);
 }
 
 /* Four line of text - The introduction of the website */
-div#shortIntro p{
-	width: 52%;
-	display: inline-block;
+div#shortIntro blockquote{
+	margin-bottom: 0px;
 }
 
+
 /* Big Quotes wrap the above introduction */
-span.quotes{
+blockquote:before, blockquote:after{
+	font-family: 'American Typewriter', Times, serif;
 	font-size: 3em;
 	font-weight: 600;
 }
-span.quotes.left{
-	float: left;
-	height: 126px;
+div#shortIntro blockquote:before{
+	content: "\201c";
+	height: 120px;
+	padding-right: 20px;
 	position: relative;
-	top: -15px;
-	margin-right: 12px;
+	top: -20px;
+	float: left;
 }
-span.quotes.right{
+
+/* Brandon recommend to show only one set of quotes.*/
+/*div#shortIntro blockquote:after{
+	content: "\201d";
+	display: block;
 	float: right;
 	position: relative;
 	top: 7px;
-	left: -2px;
-}
+	left: 24px;
+}*/
 
 /* A href to the About page */
 a.learnAboutThreeEvent{
 	display: inline-block;
 
 	/* Right alingment for the url link */
-	position: absolute;
-	right: 60px;
-	bottom: 68px;
-
-/* Not using th center alingment for the url */
-/*	width: 37%;
-	margin: 0 auto;
-	text-align: center;*/
-	
+/*	position: absolute;
+	right: 92px;
+	bottom: -10px;*/
 }
 /* =================================================== [END] Short Intro ===============*/
 

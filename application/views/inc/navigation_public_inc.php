@@ -44,9 +44,16 @@
 				</ul>
 			</div><!-- [END] #nav_wrapper -->
 			<div id="shortIntro">
-				<p><span class="quotes left">"</span>Hello and welcome to the water ski community web site. Here you will find interesting topic base on Three Event Water Skiing.  If you never heard of this sport, you can read what Three Event Water Skiing is all about.<span class="quotes right">"</span></p>
+				<a href="<?= base_url('index.php/Views/about3Event') ?>">
+					<img src="<?= base_url('inc/img/landing/courseColor.jpg')?>" alt="Skiier just before dusk" />
+				</a>
+				
+				<!-- <blockquote> --><!-- <span class="quotes left">&ldquo;</span> -->
+				<h3>Welcome to the water ski community!</h3>
+				<h3>Read what others are talking about...</h3>
+				<p>Here you will find interesting reads in the four topic base on Three Event Water Skiing.  If you never heard of this sport, you can read here exactly about what Three Event Water Skiing is all about.</p><!-- <span class="quotes right">&rdquo;</span> --><!-- </blockquote> -->
+				<input type="button" name="aboutThreeEvent" onClick="<?= base_url('index.php/Views/about3Event') ?>" value="About 3 Event">
 				<!-- a href - Learn about 3-Event -->
-				<a class="learnAboutThreeEvent" href="<?= base_url('index.php/Views/about3Event') ?>">Learn about <?= $currentTitle ?></a>
 			</div><!-- [END] #shortIntro -->
 
 		</div><!-- [END] #header .public -->
