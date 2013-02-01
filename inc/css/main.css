@@ -7,9 +7,6 @@
 /*  Main Page CSS*/
 /*===============================================================*/
 /* ##### KRM Set ################################################*/
-.clearBoth{
-	clear: both;
-}
 ul{
 	list-style: none;
 	padding: 0px;
@@ -87,7 +84,6 @@ p{
 }
 a{
 	color: rgba(58, 58, 58, .7);
-	font-size: .9em;
 	text-decoration: underline;
 }
 
@@ -110,15 +106,20 @@ a:hover{
 /*##########################################################################*/
 /*##### Buttons ############################################################*/
 /*##########################################################################*/
-a.landingBTN {
+a.landingBTN, input[type='button']{
 	display: block;
 	clear: both;
-	margin: 0 auto;
 	text-align: center;
+
+	opacity:.70;
+		-khtml-opacity:.7; 
+		-moz-opacity:.7;
+		-ms-filter:"alpha(opacity=70)";
+		/* Validation Service Error *//*filter:alpha(opacity=80);*/
+		/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
+
 	text-decoration: none;
-	width: 280px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
 	color: #060a06;
 	padding: 10px 20px;
 	background: -moz-linear-gradient(
@@ -132,7 +133,7 @@ a.landingBTN {
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	border: 3px solid rgba(70, 117, 201, 0.7);
+	border: 1px solid rgba(70, 117, 201, 0.7);
 	-moz-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
 		inset 0px 0px 3px rgba(184,198,255,1);
@@ -146,8 +147,19 @@ a.landingBTN {
 		0px -1px 0px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,1);
 }
+a.landingBTN{
+	margin: 76px auto 30px;	
+	width: 280px;
+}
 
-.landingBTN:hover{
+.landingBTN:hover, input[type='button']:hover{
+	opacity:.90;
+		-khtml-opacity:.9; 
+		-moz-opacity:.9;
+		-ms-filter:"alpha(opacity=90)";
+		/* Validation Service Error *//*filter:alpha(opacity=80);*/
+		/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
+
 	color: rgb(30, 32, 30);
 	padding: 10px 20px;
 	background: -moz-linear-gradient(
@@ -158,7 +170,7 @@ a.landingBTN {
 		linear, left top, left bottom, 
 		from(rgb(165, 177, 206)),
 		to(rgb(217, 234, 238)));
-	border: 3px solid rgba(70, 117, 201, 0.85);
+	border: 2px solid rgba(70, 117, 201, 0.85);
 	border-radius: 10px;
 		-moz-border-radius: 10px;
 		-webkit-border-radius: 10px;
@@ -175,6 +187,11 @@ a.landingBTN {
 		0px -1px 0px rgba(000,000,000,0.2),
 		0px 1px 0px rgba(255,255,255,1);
 }
+a.landingBTN:hover{
+	margin: 75px auto;	
+	width:280px;
+}
+
 /*==================================================== [END] Buttons ========*/
 
 
@@ -252,17 +269,17 @@ div.table{
 	display: table;
 	margin: 0 auto;
 }
-ul#nav {
+ul#nav{
 	font-size:14px;
 	list-style:none;
 	margin:0 auto;
 	padding:0;
 	overflow: auto;
 }
-ul#nav li {
+ul#nav li{
 	display:inline;
 }
-ul#nav li a {
+ul#nav li a{
 	text-decoration:none;
 	display: block;
 	padding:5px 21px;
@@ -309,9 +326,12 @@ hr.style_two{
 
 /* ##### Short Intro ################################################### */
 div#shortIntro{
+	height: 240px;
 	clear:both;
-	width: 80%;
+	margin: 0 auto;
+	width: 88%;
 	position: relative;
+	margin-bottom: 40px;
 }
 div#shortIntro a{
 	float: left;
@@ -322,27 +342,36 @@ div#shortIntro a{
 div#shortIntro h3{
 	color: rgba(21, 85, 121, .8);
 }
-
-/* Four line of text - The introduction of the website */
-div#shortIntro blockquote{
-	margin-bottom: 0px;
+div#shortIntro input[type='button']{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+div#shortIntro input[type='button']:hover{
+	bottom: -1px;
+	right: -1px;
 }
 
-
+/* Mangment changed layout - Will not be using blockquotes */
+/* Using H3 color, H4, and button */
+/* Four line of text - The introduction of the website */
+/*div#shortIntro blockquote{
+	margin-bottom: 0px;
+}*/
 /* Big Quotes wrap the above introduction */
-blockquote:before, blockquote:after{
+/*blockquote:before, blockquote:after{
 	font-family: 'American Typewriter', Times, serif;
 	font-size: 3em;
 	font-weight: 600;
-}
-div#shortIntro blockquote:before{
+}*/
+/*div#shortIntro blockquote:before{
 	content: "\201c";
 	height: 120px;
 	padding-right: 20px;
 	position: relative;
 	top: -20px;
 	float: left;
-}
+}*/
 
 /* Brandon recommend to show only one set of quotes.*/
 /*div#shortIntro blockquote:after{
@@ -353,15 +382,6 @@ div#shortIntro blockquote:before{
 	top: 7px;
 	left: 24px;
 }*/
-
-/* A href to the About page */
-a.learnAboutThreeEvent{
-	display: inline-block;
-
-	/* Right alingment for the url link */
-/*	position: absolute;
-	right: 92px;
-	bottom: -10px;*/
 }
 /* =================================================== [END] Short Intro ===============*/
 
@@ -384,6 +404,11 @@ ul#siteInfo li{
 	width:220px;
 	margin-left: 0px;
 	margin-right: 25px;
+	-webkit-transition:  .4s ease-in-out;
+	-moz-transition:  .4s ease-in-out;
+	-o-transition:  .4s ease-in-out;
+	-ms-transition:  .4s ease-in-out;
+	transition:  .4s ease-in-out;
 }
 ul#siteInfo li:last-child{
 	margin-right: 0px;
