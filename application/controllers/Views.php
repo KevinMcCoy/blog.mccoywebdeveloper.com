@@ -111,17 +111,20 @@ class Views extends CI_Controller {
 		$this->theEnd();
 	}
 
-
-	public function slalomBlogs(){
-		$this->data['dbBlogTitle'][0] = 'Slalom ski title';
-		$this->data['dbStoryShort'][0] = 'The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
+	public function tempSlalom(){
+		$this->data['dbBlogTitle'][0] = 'Do you know how to Slalom ski?';
+		$this->data['dbStoryShort'][0] = 'I can tell you how, its really fun! The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd. Yeeeehawwwww. :-) ';
+		$this->data['dbStoryLong'][0] = 'I can tell you how, its really fun! The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd. Yeeeehawwwww. :-) I can tell you how, its really fun! The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd. Yeeeehawwwww. :-) I can tell you how, its really fun! The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd. Yeeeehawwwww. :-)';
 		$this->data['dbWriter'][0] = 'Kevin McCoy';
 		$this->data['dbWriterDate'][0] = '01/12/2014';
-
+	}
+	public function slalomBlogs(){
+		$this->tempSlalom();
 		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function slalomStory(){
+		$this->tempSlalom();
 		$this->load->view('story_view', $this->data);
 		$this->theEnd();
 	}
