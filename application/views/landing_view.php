@@ -31,8 +31,8 @@
 			</a>
 		</li>
 	</ul><!--[END]#siteInfo-->
-
-<span class="clearBoth"><a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Google Plus 3-Event Community</a></span>
+	<div class="clear"></div>
+	<a class="landingBTN" target="_blank" href="https://plus.google.com/u/0/communities/106457987016584993268">Google Plus 3-Event Community</a>
 
 <!-- [End] of file views/landing_view.php -->
 <!-- Location: .../application/views/landing_views.php -->
