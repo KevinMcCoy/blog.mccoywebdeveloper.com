@@ -33,7 +33,7 @@
 			</div>
 			<p itemprop="description"><?= $dbStoryShort[0] ?></p>
 <!-- TODO::  URL NUMBERS -->			
-			<span class="right"><a href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a></span>
+			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
 		</li>
 
 <!-- LOOP TESTING Remove below later on -->
@@ -57,7 +57,7 @@
 			</div>
 			<p itemprop="description"><?= $dbStoryShort[1] ?></p>
 <!-- TODO::  URL NUMBERS -->			
-			<span class="right"><a href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a></span>
+			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
 		</li>
 
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
@@ -78,7 +78,7 @@
  				</div>
 			</div>
 			<p>Yeeeeehawwwwwww. It is fun to jump on a slalom ski. Once I cross the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
-			<span class="right"><a href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a></span>
+			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
 		</li>
 	</ul><!--[END]#slalomBlog-->
 </div>

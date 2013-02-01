@@ -16,10 +16,6 @@ li{
 	overflow: visible;
 }
 div.clear{clear:both;}
-span.right{
-	float: right;
-	margin-top: 4px;
-}
 
 /* ##### Font Setup #############################################*/
 /* Company's Logo */
@@ -75,7 +71,7 @@ p, a{
 	text-decoration: none;
 	font-family: Tahoma, Geneva, sans-serif;
 	text-align: left;
-	font-size: 1em;
+	font-size: 16px; /* 1em did weried things */
 	letter-spacing: 1px;
 }
 p{
@@ -449,13 +445,18 @@ ul.blogsShort li{
 	margin: 15px 0 18px;
 	overflow: visible;
 }
-ul.blogShort li p{
-	width: 100%;
-}
 ul.blogsShort img{
 	float: left;
 	margin-right: 25px;
 }
+ul.blogShort li p{
+	width: 100%;
+}
+ul.blogsShort li a.text{
+	float: right;
+	margin: 4px 14px 0px 0px;
+}
+
 div.social{
 	overflow: visible;
 	display: table-cell;
