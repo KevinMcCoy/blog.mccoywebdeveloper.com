@@ -163,17 +163,17 @@ class Views extends CI_Controller {
 
 
 
-		$this->load->view('Blogs_view', $this->data);
+		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function jumpStory(){
-		$this->load->view('Story_view', $this->data);
+		$this->load->view('story_view', $this->data);
 		$this->theEnd();
 	}
 
 
 	public function overallBlogs(){
-		$this->load->view('Blogs_view', $this->data);
+		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function overallStory(){
