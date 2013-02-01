@@ -25,9 +25,9 @@ class Views extends CI_Controller {
 		$this->data['currentPage'] = substr($rURI, strrpos($rURI, '/') + 1);
 		$rURI = NULL;
 
-		/* ## Set the class name and Title to display in html ## */
-		/* ## This is using the last uri name ## */
+		/* ## Data Setup ## */
 
+		/* ## curentPage is using the last uri name ## */
 		$crPapge = NULL;
 		$crPage = $this->data['currentPage'];
 		if(!$crPage || $crPage == "landing" || $crPage == "Views" || $crPage == "index.php") $this->landingSetup();
