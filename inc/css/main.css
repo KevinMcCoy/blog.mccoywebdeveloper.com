@@ -1,7 +1,6 @@
 /*
-	Author: Kevin McCoy
-	XCreated: 01/19/2013
-
+**	Author: Kevin McCoy
+**	Created: 01/19/2013
 */
 /*===============================================================*/
 /*  Main Page CSS*/
@@ -44,7 +43,7 @@ h3{
 	text-align: left;
 	color: rgba(58, 58, 58, .8);
 	font-size: 1.5em;
-	margin: 0px 0px 4px;
+	margin: 0px;
 }
 h3.center{
 	text-align: center;
@@ -237,10 +236,10 @@ div.left{
 	padding-right: 25px;
 }
 div.right{
-	float: left;
+	float: right;
 	width: 170px;
-	border: solid red 2px;
-	height: 1000px;
+/*	border: solid red 2px;
+	height: 1000px;*/
 }
 
 
@@ -528,16 +527,33 @@ ul#story a.text:hover{
 /*##########################################################################*/
 /*##### About 3-Event ######################################################*/
 /*##########################################################################*/
+div#aboutThreeEvent_page h2{
+	margin: 20px 0px 24px;
+}
 ul#about3Event li{
 	clear: both;
+	margin-bottom: 65px;
+	height: 320px;
+	position: relative;
 }
-ul#about3Event img{
+ul#about3Event li:last-child{
+	margin-bottom: 0px;
+}
+
+ul#about3Event li:nth-child(odd) img{
 	float: left;
 	margin: 0px 12px 12px 0px;
 }
-ul#about3Event h3, ul#about3Event p{
-	margin-left: 12px;
+ul#about3Event li:nth-child(even) img{
+	float: right;
+	margin: 0px 0px 12px 12px;
 }
+
+ul#about3Event li:nth-child(odd) a{
+	position: absolute;
+	right: 12px;
+}
+
 /*======================= [END] About 3-Event ========*/
 
 
