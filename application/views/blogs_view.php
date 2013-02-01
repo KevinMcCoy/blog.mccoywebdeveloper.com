@@ -16,7 +16,7 @@
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 <!-- TODO:: Add current story number after story name ... -->
 			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
-				<img itemprop="image" src="<?= base_url('inc/img/landing/slalom_003.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
+				<img itemprop="image" src="<?= base_url('inc/img/blogs/'.$current.'_001.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3 itemprop="name"><?= $dbBlogTitle[0] ?></h3>
 			</a>
 			<div class="social">
@@ -33,14 +33,14 @@
 			</div>
 			<p itemprop="description"><?= $dbStoryShort[0] ?></p>
 <!-- TODO::  URL NUMBERS -->			
-			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
+			<a class="text" href="<?= base_url('index.php/Views/'.$current.'Story') ?>">Continue reading story...</a>
 		</li>
 
 <!-- LOOP TESTING Remove below later on -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 <!-- TODO:: Add current story number after story name ... -->
 			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
-				<img itemprop="image" src="<?= base_url('inc/img/landing/slalom_003.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
+				<img itemprop="image" src="<?= base_url('inc/img/blogs/'.$current.'_002.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3 itemprop="name"><?= $dbBlogTitle[1] ?></h3>
 			</a>
 			<div class="social">
@@ -61,8 +61,8 @@
 		</li>
 
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
-			<a href="<?= base_url('index.php/Views/slalomStory') ?>">
-				<img itemprop="image" src="<?= base_url('inc/img/landing/slalom_002.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
+			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
+				<img itemprop="image" src="<?= base_url('inc/img/blogs/'.$current.'_003.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3 temprop="name">Do you know how to ski?</h3>
 			</a>
 			<div class="social">
