@@ -1,3 +1,4 @@
+
 /*
 **	Author: Kevin McCoy
 **	Created: 01/19/2013
@@ -52,7 +53,6 @@ h3.center{
 
 /* Blog writer name and/or date */
 h4{
-	display: table-cell;
 	margin: 0px;
 	padding: 0px 0px 10px;
 	vertical-align: middle;
@@ -477,8 +477,7 @@ ul.blogsShort div.facebook{
 	padding-top: 1px;
 }
 ul.blogsShort div.googleplus{
-	position: relative;
-	right: -27px;
+	float: left;
 }
 
 ul#story div.social{
@@ -514,13 +513,12 @@ ul#story a.text{
 	float: right;
 	padding-top: 11px;
 	text-decoration: none;
+	font-size: 12px;
 }
 ul#story a.text:hover{
 	float: right;
 	text-decoration: underline;
 }
-
-
 /*======================= [END] Full Story Page ========*/
 
 
