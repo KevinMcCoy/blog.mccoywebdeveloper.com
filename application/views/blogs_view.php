@@ -77,7 +77,7 @@
  					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
  				</div>
 			</div>
-			<p>Yeeeeehawwwwwww. It is fun to jump on a slalom ski. Once I cross the boat's wake, the skier can then start going around six buoys in a ski course. The boat’s top speed is 36 MPHs.</p>
+			<p itemprop="description"><?= $dbStoryShort[1] ?></p>
 			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
 		</li>
 	</ul><!--[END]#slalomBlog-->

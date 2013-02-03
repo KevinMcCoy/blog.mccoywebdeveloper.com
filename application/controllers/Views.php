@@ -129,8 +129,7 @@ class Views extends CI_Controller {
 		$this->theEnd();
 	}
 
-
-	public function trickBlogs(){
+	public function tempTrick(){
 		$this->data['dbBlogTitle'][0] = 'trick ski title';
 		$this->data['dbStoryShort'][0] = 'The short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
 		$this->data['dbWriter'][0] = 'Kevin McCoy';
@@ -140,36 +139,38 @@ class Views extends CI_Controller {
 		$this->data['dbStoryShort'][1] = 'The 2 short story load here about about the big stroy iwll contueinte toe rhead adsflkadsf. asdfajsdflkjfd.asdf.asd.fa.sf. a.sdf.asdf .asdf . Yeeeehawwwww. :-) ';
 		$this->data['dbWriter'][1] = 'Kevin Two';
 		$this->data['dbWriterDate'][1] = '01/12/2012';
-
-
+	}
+	public function trickBlogs(){
+		$this->tempTrick();
 		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function trickStory(){
+		$this->tempTrick();
 		$this->load->view('story_view', $this->data);
 		$this->theEnd();
 	}
 
-
-	public function jumpBlogs(){
+	public function tempJump(){
 		$this->data['dbWriter'][0] = 'dbWriter';
-		$this->data['dbWriterDate'][0] = '1234';
-		$this->data['dbBlogTitle'] = 'dbBlogTitle';
-		$this->data['dbStoryShort'][0] = 'NuLLy dbStoryShort';
-		$this->data['dbStoryLong'][0] = 'NuLLy dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
+		$this->data['dbWriterDate'][0] = '2012/02/28';
+		$this->data['dbBlogTitle'] = 'Jump dbBlogTitle';
+		$this->data['dbStoryShort'][0] = 'Jump dbStoryShort in short';
+		$this->data['dbStoryLong'][0] = 'Jump dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
 
 		$this->data['dbWriter'][1] = 'NuLLy dbWriter';
 		$this->data['dbWriterDate'][1] = 'NuLLy dbWriterDate';
 		$this->data['dbBlogTitle'][1] = 'NuLLy dbBlogTitle';
 		$this->data['dbStoryShort'][1] = 'NuLLy dbStoryShort';
-		$this->data['dbStoryLong'][1] = 'NuLLy dbStory Long Basasdfasdf asdfasdf asdfasdf asdfasdf asdfasdfasdf asdf';
-
-
-
+		$this->data['dbStoryLong'][1] = 'Yeeeeehawwwwwww. It is fun to jump on a slalom ski. Once I cross the boats wake, the skier can then start going around six buoys in a ski course. The boats top speed is 36 MPHs.';
+	}
+	public function jumpBlogs(){
+		$this->tempJump();
 		$this->load->view('blogs_view', $this->data);
 		$this->theEnd();
 	}
 	public function jumpStory(){
+		$this->tempJump();
 		$this->load->view('story_view', $this->data);
 		$this->theEnd();
 	}
