@@ -43,7 +43,8 @@
 					<li><?php if($currentPageID == 'overall_page') echo '<li class="current">'; else echo '<li>' ?><a href="<?= base_url('index.php/Views/overallBlogs') ?>">Overall</a></li>
 				</ul>
 			</div><!-- [END] #nav_wrapper -->
-
+			<div class="clear"></div>
+			
 			<?php 	if($currentPageID == 'landing_page') $this->load->view('inc/intro_01_inc.php');
 					// elseif ($currentPageID == 'slalom_page' || $currentPageID == 'trick_page' || $currentPageID == 'jump_page' || $currentPageID == 'overall_page') $this->load->view('inc/intro_02_inc.php');
 			 ?>

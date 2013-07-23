@@ -10,21 +10,21 @@
 			</a>
 		</li>
 		<li class="trick">
-			<a href="<?= base_url('index.php/Views/wip') ?>">
+			<a href="<?= base_url('index.php/Views/trickBlogs') ?>">
 				<h2>Trick Ski</h2>
 				<img src="<?= base_url('inc/img/landing/trick_001.jpg') ?>" alt="Trick Skiier doing a flip" width="200" height="200" />
 				<p>The skier has a time limit to perform tricks that are worth points.</p>
 			</a>
 		</li>
 		<li class="jump">
-			<a href="<?= base_url('index.php/Views/wip') ?>">
+			<a href="<?= base_url('index.php/Views/jumpBlogs') ?>">
 				<h2>Jump Ski</h2>
 				<img src="<?= base_url('inc/img/landing/jump_001.jpg') ?>" alt="Jump Skiier flying in the sky" width="200" height="200" />
 				<p>The skier goes over a five to six feet fiberglass ramp. The boat’s top speed is 45mph.</p>
 			</a>
 		</li>
 		<li class="overall">
-			<a href="<?= base_url('index.php/Views/wip') ?>">
+			<a href="<?= base_url('index.php/Views/overallBlogs') ?>">
 				<h2>Overall 3-Event</h2>
 				<img src="<?= base_url('inc/img/landing/overall_002.jpg') ?>" alt="Overall Winners" width="200" height="200" />
 				<p>Slalom, trick, and jump scores are added together to determine the overall winner.</p>

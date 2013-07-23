@@ -1,2 +1,2 @@
-WingKit
+McCoy Web Developer
 =======
