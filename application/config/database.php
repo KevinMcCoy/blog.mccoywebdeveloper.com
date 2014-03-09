@@ -53,7 +53,9 @@ $db['default']['username'] = 'root';
 
 $db['default']['password'] = 'root';
 $db['local']['password'] = 'root';
-$db['serverTesting']['password'] = 'wingkit';
+$db['serverTesting']['password'] = 'walkonwater';
+$db['devlive']['password'] = 'walkonwater';
+$db['live']['password'] = 'walkonwater';
 
 $db['default']['database'] = 'skiblog';
 $db['default']['dbdriver'] = 'mysql';
