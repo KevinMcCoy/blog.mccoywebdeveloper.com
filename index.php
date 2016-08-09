@@ -18,13 +18,15 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	$ServerHH = $_SERVER['HTTP_HOST'];
-	if($ServerHH == '127.0.0.1' || $ServerHH == 'localhost'){
-		define('ENVIRONMENT', 'local');
-	}else{
-		define('ENVIRONMENT', 'serverTesting');
-	};
-	$ServerHH = null;
+
+ $ServerHH = $_SERVER['HTTP_HOST'];
+ if($ServerHH == '127.0.0.1' || $ServerHH == 'localhost'){
+	 define('ENVIRONMENT', 'local_development');
+ }else{
+	 define('ENVIRONMENT', 'production');
+ };
+ $ServerHH = null;
+
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -34,26 +36,23 @@
  * By default development will show errors but testing and live will hide them.
  */
 
-	if (defined('ENVIRONMENT'))
+if (defined('ENVIRONMENT'))
+{
+	switch (ENVIRONMENT)
 	{
-		switch (ENVIRONMENT)
-		{
-			case 'local':
-				error_reporting(E_ALL);
-			break;
-		
-			case 'serverTesting':
-				error_reporting(0);
-			break;
-			
-			case 'production':
-				error_reporting(0);
-			break;
+		case 'local_development':
+			error_reporting(E_ALL);
+		break;
 
-			default:
-				exit('The application environment is not set correctly.');
-		}
+		case 'testing':
+		case 'production':
+			error_reporting(0);
+		break;
+
+		default:
+			exit('The application environment is not set correctly.');
 	}
+}
 
 /*
  *---------------------------------------------------------------
