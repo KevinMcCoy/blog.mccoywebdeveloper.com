@@ -110,7 +110,7 @@ a.landingBTN, input[type='button']{
 	text-align: center;
 
 	opacity:.70;
-		-khtml-opacity:.7; 
+		-khtml-opacity:.7;
 		-moz-opacity:.7;
 		-ms-filter:"alpha(opacity=70)";
 		/* Validation Service Error *//*filter:alpha(opacity=80);*/
@@ -125,7 +125,7 @@ a.landingBTN, input[type='button']{
 		#e4f2f5 0%,
 		#b6b9d6);
 	background: -webkit-gradient(
-		linear, left top, left bottom, 
+		linear, left top, left bottom,
 		from(rgba(182, 185, 214, 0.78)),
 		to(#e4f2f5));
 	-moz-border-radius: 10px;
@@ -146,13 +146,13 @@ a.landingBTN, input[type='button']{
 		0px 1px 0px rgba(255,255,255,1);
 }
 a.landingBTN{
-	margin: 76px auto 30px;	
+	margin: 76px auto 30px;
 	width: 280px;
 }
 
 .landingBTN:hover, input[type='button']:hover{
 	opacity:.90;
-		-khtml-opacity:.9; 
+		-khtml-opacity:.9;
 		-moz-opacity:.9;
 		-ms-filter:"alpha(opacity=90)";
 		/* Validation Service Error *//*filter:alpha(opacity=80);*/
@@ -165,7 +165,7 @@ a.landingBTN{
 		rgb(217, 234, 238) 0%,
 		rgb(165, 177, 206));
 	background: -webkit-gradient(
-		linear, left top, left bottom, 
+		linear, left top, left bottom,
 		from(rgb(165, 177, 206)),
 		to(rgb(217, 234, 238)));
 	border: 2px solid rgba(70, 117, 201, 0.85);
@@ -196,12 +196,12 @@ a.landingBTN:hover{
 /*##### Layout Start Here - Wrapper - ######################################*/
 /*##########################################################################*/
 body{
-	background: url("../bg/lake.jpg") no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  /* Validation Service Error *//* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake.jpg', sizingMethod='scale');  */
-	  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake.jpg', sizingMethod='scale')";
+	background: url("../bg/lake_interlaced.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		/* Validation Service Error *//* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake_interlaced.jpg', sizingMethod='scale');  */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake_interlaced.jpg', sizingMethod='scale')";
 	background-size: cover;
 /* TESTING::  Other backgorund options - disliked */
 /*		background: url("../bg/black_paper.png") repeat;
@@ -220,13 +220,13 @@ body{
 /*	background: url("../bg/random_grey_variations.png")x
 	background: url("../bg/pp.jpg");
 	background: url("../bg/Natural-Paper-Palette/deepsea.jpg"); */
-	background: url("../bg/natural_paper/eggshell.png");
-/*	opacity:.90; 
-		-khtml-opacity:.8; 
+	background: url("../bg/natural_paper/eggshell_interlace.png");
+/*	opacity:.90;
+		-khtml-opacity:.8;
 		-moz-opacity:.8;
 		-ms-filter:"alpha(opacity=80)";*/
-  	 	/* Validation Service Error *//*filter:alpha(opacity=80);*/
-  		/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
+			 /* Validation Service Error *//*filter:alpha(opacity=80);*/
+			/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
 }
 div.left{
 	float: left;
@@ -301,10 +301,10 @@ hr.style_one{
 	border: 0;
 	height: 1px;
 	width: 800px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.2)); 
-	background-image:	-moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.2)); 
-	background-image:	 -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.2)); 
-	background-image:	  -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.15)); 
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.2));
+	background-image:	-moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.2));
+	background-image:	 -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.2));
+	background-image:	  -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0.15));
 }
 hr.style_two{
 	clear: both;
@@ -314,10 +314,10 @@ hr.style_two{
 	border: 0;
 	height: 1px;
 	width: 600px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
-	background-image:	-moz-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
-	background-image:	 -ms-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
-	background-image:	  -o-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1)); 
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+	background-image:	-moz-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+	background-image:	 -ms-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1));
+	background-image:	  -o-linear-gradient(left, rgba(0,0,0,0.1), rgba(0,0,0,0.25), rgba(0,0,0,0.1));
 }
 /* =================================================== [END] Navgation ===============*/
 
@@ -555,4 +555,3 @@ ul#about3Event li:nth-child(odd) a{
 
 
 /*======================= [END] Main.css ========*/
-
