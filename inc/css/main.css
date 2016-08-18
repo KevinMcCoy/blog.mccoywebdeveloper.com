@@ -196,12 +196,12 @@ a.landingBTN:hover{
 /*##### Layout Start Here - Wrapper - ######################################*/
 /*##########################################################################*/
 body{
-	background: url("../bg/lake_interlaced.jpg") no-repeat center center fixed;
+	background: url("../bg/lake_interlace.jpg") no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
-		/* Validation Service Error *//* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake_interlaced.jpg', sizingMethod='scale');  */
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake_interlaced.jpg', sizingMethod='scale')";
+		/* Validation Service Error *//* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake_interlace.jpg', sizingMethod='scale');  */
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../bg/lake_interlace.jpg', sizingMethod='scale')";
 	background-size: cover;
 /* TESTING::  Other backgorund options - disliked */
 /*		background: url("../bg/black_paper.png") repeat;
