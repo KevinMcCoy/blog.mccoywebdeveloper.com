@@ -217,14 +217,13 @@ body{
 		-moz-box-shadow:0px 3px 6px #000;
 		-webkit-box-shadow:0px 3px 6px #000;
 	padding-bottom: 65px;
-/*	background: url("../bg/random_grey_variations.png")x
-	background: url("../bg/pp.jpg");
-	background: url("../bg/Natural-Paper-Palette/deepsea.jpg"); */
-	background: url("../bg/natural_paper/eggshell_interlace.png");
-/*	opacity:.90;
+
+	/*background: url("../bg/natural_paper/eggshell_interlace.png");*/
+	background: url("../bg/natural_paper/eggshell_interlace.jpg");
+	opacity:.90;
 		-khtml-opacity:.8;
 		-moz-opacity:.8;
-		-ms-filter:"alpha(opacity=80)";*/
+		-ms-filter:"alpha(opacity=80)";
 			 /* Validation Service Error *//*filter:alpha(opacity=80);*/
 			/* Validation Service Error *//*filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.8);*/
 }
