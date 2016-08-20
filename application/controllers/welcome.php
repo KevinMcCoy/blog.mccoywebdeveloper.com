@@ -1,4 +1,5 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
@@ -15,18 +16,10 @@ class Welcome extends CI_Controller {
 	 *
 	 * So any other public methods not prefixed with an underscore will
 	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
 	{
 		$this->load->view('welcome_message');
 	}
-
-	// public function index(){
-	// //TODO:: Add baseurl to this or use /* Location: ./application/config/routes.php */
-	// 	header('Location: http://127.0.0.1/McCoyDeveloper/index.php/Views/landing');
-	// }
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

@@ -15,7 +15,7 @@
 		<!-- Data base load first for this list to load -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 <!-- TODO:: Add current story number after story name ... -->
-			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
+			<a href="<?= base_url($current.'/'.$current.'Story') ?>">
 				<img itemprop="image" src="<?= base_url('inc/img/blogs/'.$current.'_001.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3 itemprop="name"><?= $dbBlogTitle[0] ?></h3>
 			</a>
@@ -28,23 +28,23 @@
 				<!-- Google +1 button -->
 				<div class="googleplus">
 					<!-- <div class="g-plus" data-action="share"></div> -->
- 					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
- 				</div>
+					 <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+				 </div>
 			</div>
 			<p itemprop="description"><?= $dbStoryShort[0] ?></p>
-<!-- TODO::  URL NUMBERS -->			
-			<a class="text" href="<?= base_url('index.php/Views/'.$current.'Story') ?>">Continue reading story...</a>
+<!-- TODO::  URL NUMBERS -->
+			<a class="text" href="<?= base_url($current.'/'.$current.'Story') ?>">Continue reading story...</a>
 		</li>
 
 <!-- LOOP TESTING Remove below later on -->
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
 <!-- TODO:: Add current story number after story name ... -->
-			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
+			<a href="<?= base_url($current.'/'.$current.'Story') ?>">
 				<img itemprop="image" src="<?= base_url('inc/img/blogs/'.$current.'_002.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
-				<h3 itemprop="name"><?= $dbBlogTitle[1] ?></h3>
+				<h3 itemprop="name"><?= $dbBlogTitle[0] ?></h3>
 			</a>
 			<div class="social">
-				<h4><?= $dbWriter[1].' '.$dbWriterDate[1] ?></h4>
+				<h4><?= $dbWriter[0].' '.$dbWriterDate[0] ?></h4>
 				<!-- Facebook like button -->
 				<!-- <div class="facebook">
 					<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
@@ -52,16 +52,16 @@
 				<!-- Google +1 button -->
 				<div class="googleplus">
 					<!-- <div class="g-plus" data-action="share"></div> -->
- 					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
- 				</div>
+					 <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+				 </div>
 			</div>
-			<p itemprop="description"><?= $dbStoryShort[1] ?></p>
-<!-- TODO::  URL NUMBERS -->			
+			<p itemprop="description"><?= $dbStoryShort[0] ?></p>
+<!-- TODO::  URL NUMBERS -->
 			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
 		</li>
 
 		<li itemscope itemtype="www.McCoyWebDeveloper.com/" >
-			<a href="<?= base_url('index.php/Views/'.$current.'Story') ?>">
+			<a href="<?= base_url($current.'/'.$current.'Story') ?>">
 				<img itemprop="image" src="<?= base_url('inc/img/blogs/'.$current.'_003.jpg') ?>" width="200" height="160" alt="Slalom Skiier just before dusk" />
 				<h3 temprop="name">Do you know how to ski?</h3>
 			</a>
@@ -74,10 +74,10 @@
 				<!-- Google +1 button -->
 				<div class="googleplus">
 					<!-- <div class="g-plus" data-action="share"></div> -->
- 					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
- 				</div>
+					 <div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
+				 </div>
 			</div>
-			<p itemprop="description"><?= $dbStoryShort[1] ?></p>
+			<p itemprop="description"><?= $dbStoryShort[0] ?></p>
 			<a class="text" href="<?= base_url('index.php/Views/slalomStory') ?>">Continue reading story...</a>
 		</li>
 	</ul><!--[END]#slalomBlog-->

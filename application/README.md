@@ -1,2 +1,0 @@
-McCoy Web Developer
-=======

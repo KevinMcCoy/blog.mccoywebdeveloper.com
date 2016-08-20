@@ -1,6 +1,8 @@
+<?php
+	// Jan 21, 2013 Created on by Kevin McCoy
+	// Jan 30, 2013 Rename for sever side
+?>
 <!-- [Start] views/slalomStory_view.php -->
-<!-- Jan 21, 2013 Created on by Kevin McCoy -->
-<!-- Jan 30, 2013 Rename for sever side -->
 
 <!-- Hidden This is were you can add a center in another development stage IDEA:: -->
 <div id="center" style="display:none; visibility:hidden;">
