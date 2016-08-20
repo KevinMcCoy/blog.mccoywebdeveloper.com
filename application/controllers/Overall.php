@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-include 'Main_Controller.php';
+include 'BaseController.php';
 
-class Overall extends Main_Controller {
+class Overall extends BaseController {
 
-	public function initK()
+	public function initialData()
 	{
 		$this->data['currentPageID'] = 'overall_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Overall Winning';
@@ -19,17 +19,14 @@ class Overall extends Main_Controller {
 
 	public function index()
 	{
-		$this->initK();
-
-		$this->load->model('Blog_model');
-		$this->load->view('blogs_view', $this->data);
+		$this->initialData();
+		$this->blogsViews($this->data);
 	}
 
 	public function overallStory(){
-		$this->initK();
-
-		$this->load->view('story_view', $this->data);
+		$this->initialData();
+		$this->storyViews($this->data);
 	}
 
 
-}/* [END] class Overall extends Main_Controller */
+}/* [END] class Overall extends BaseController */

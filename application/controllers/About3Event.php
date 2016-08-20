@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-include 'Main_Controller.php';
+include 'BaseController.php';
 
-class About3Event extends Main_Controller {
+class About3Event extends BaseController {
 
 	private $data;
 
@@ -20,4 +20,4 @@ class About3Event extends Main_Controller {
 	}
 
 
-}/* [END] class About3Event extends Main_Controller */
+}/* [END] class About3Event extends BaseController */

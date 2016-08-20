@@ -24,7 +24,7 @@
 				<div class="googleplus">
 					<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="200"></div>
 				</div>
-			<a class="text" href="<?= base_url('index.php/Views/'.$current.'Blogs') ?>">Back to <?= $current ?> Blogs list</a>
+			<a class="text" href="<?= base_url($current) ?>">Back to <?= $current ?> Blogs list</a>
 			</div>
 			<img src="<?= base_url('inc/img/story/'.$current.'_001.jpg')?>" width="730" height="560" alt="Skiier just before dusk" />
 			<p itemprop="description"><?= $dbStoryLong[0] ?></p>

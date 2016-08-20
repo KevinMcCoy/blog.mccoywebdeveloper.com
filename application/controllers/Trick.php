@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-include 'Main_Controller.php';
+include 'BaseController.php';
 
-class Trick extends Main_Controller {
+class Trick extends BaseController {
 
 	public function initialData()
 	{
@@ -20,17 +20,13 @@ class Trick extends Main_Controller {
 	public function index()
 	{
 		$this->initialData();
-		$this->load->model('Blog_model');
-
-		$this->initializeView($this->data);
-		$this->load->view('blogs_view', $this->data);
+		$this->blogsViews($this->data);
 	}
 
 	public function trickStory(){
 		$this->initialData();
-		$this->initializeView($this->data);
-		$this->load->view('story_view', $this->data);
+		$this->storyViews($this->data);
 	}
 
 
-}/* [END] class Trick extends Main_Controller */
+}/* [END] class Trick extends BaseController */

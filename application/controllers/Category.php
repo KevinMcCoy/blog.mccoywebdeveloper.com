@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-include 'Main_Controller.php';
+include 'BaseController.php';
 
-class Category extends Main_Controller {
+class Category extends BaseController {
 
 	private $data;
 
@@ -20,4 +20,4 @@ class Category extends Main_Controller {
 	}
 
 
-}/* [END] class Category extends Main_Controller */
+}/* [END] class Category extends BaseController */

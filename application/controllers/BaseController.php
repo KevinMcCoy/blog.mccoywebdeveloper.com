@@ -1,22 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Main_Controller extends CI_Controller {
+class BaseController extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
 	private $data;
 
 	public function __construct() {
@@ -34,31 +19,42 @@ class Main_Controller extends CI_Controller {
 	}/* [END] fn __construct() */
 
 
-	function initializeView($data){
+	public function initializeHeadView($data){
 		$this->load->view('inc/open_html_inc', $data);
 		$this->load->view('inc/navigation_public_inc', $data);
 	}
 
 
 	public function index() {
-		$this->landing();
-	}
-
-	/* Home Page is the landing */
-	public function landing(){
+		//Data
 		$this->data['currentPageID'] = 'landing_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Three Event Waterskiing';
 		$this->data['current']= 'landing';
 
-		$this->initializeView($this->data);
+		//View
+		$this->initializeHeadView($this->data);
 		$this->load->view('landing_view', $this->data);
 	}
 
-
-	function __destruct() {
-		$this->load->view('inc/footer_inc');
-		// $this->load->view('inc/feedback_inc');
-		$this->load->view('inc/close_html_inc', $this->data);
+	// Called from other controllers
+	public function blogsViews($data) {
+		// $this->load->model('Blog_model');
+		$this->initializeHeadView($data);
+		$this->load->view('blogs_view', $data);
+	}
+	public function storyViews($data) {
+		// $this->load->model('Blog_model');
+		$this->initializeHeadView($data);
+		$this->load->view('story_view', $data);
 	}
 
-}// [END] class Main_Controller extends CI_Controller
+
+	// Load Gloabl Footer View Last
+	function __destruct() {
+		$this->load->view('inc/footer_inc');
+		$this->load->view('inc/close_html_inc', $this->data);
+
+		// move else where -> $this->load->view('inc/feedback_inc');
+	}
+
+}// [END] class BaseController extends CI_Controller

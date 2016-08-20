@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-include 'Main_Controller.php';
+include 'BaseController.php';
 
-class Jump extends Main_Controller {
+class Jump extends BaseController {
 
-	public function initK()
+	public function initialData()
 	{
 		$this->data['currentPageID'] = 'jump_page'; /* Could be removed if using current in short */
 		$this->data['currentTitle'] = 'Jump Ski';
@@ -19,17 +19,14 @@ class Jump extends Main_Controller {
 
 	public function index()
 	{
-		$this->initK();
-
-		$this->load->model('Blog_model');
-		$this->load->view('blogs_view', $this->data);
+		$this->initialData();
+		$this->blogsViews($this->data);
 	}
 
 	public function jumpStory(){
-		$this->initK();
-
-		$this->load->view('story_view', $this->data);
+		$this->initialData();
+		$this->storyViews($this->data);
 	}
 
 
-}/* [END] class Jump extends Main_Controller */
+}/* [END] class Jump extends BaseController */
